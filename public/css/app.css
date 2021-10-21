@@ -491,7 +491,7 @@ body {
   margin: 0 auto;
 }
 
-.container1 {
+.header__container {
   width: 360px;
   display: flex;
   justify-content: space-between;
