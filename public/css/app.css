@@ -497,3 +497,13 @@ body {
   justify-content: space-between;
   flex-direction: row;
 }
+
+/* form search */
+
+.form-search {
+  display: inline-block;
+  border-bottom: 1px solid;
+}
+.form-search input {
+  all: unset;
+}
