@@ -57,3 +57,46 @@
   font-weight: 600;
   font-size: 16px;
 }
+
+.footer__logo-h2-font {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.button--add-span-font {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.button--add-i-font {
+  color: #fff;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.pizza-block__title {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1%;
+  margin-bottom: 20px;
+}
+
+.pizza-block__selector-ul-li {
+  padding: 8px;
+  flex: 1;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  user-select: none;
+}
+
+.pizza-block__price {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+}
