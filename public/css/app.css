@@ -1,46 +1,4 @@
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("./fonts/ProximaNova-Black.eot");
-  src: local("./fonts/Proxima Nova Black"), local("ProximaNova-Black"),
-    url("./fonts/ProximaNova-Black.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/ProximaNova-Black.woff") format("woff"),
-    url("./fonts/ProximaNova-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("./fonts/ProximaNova-Bold.eot");
-  src: local("./fonts/Proxima Nova Bold"), local("ProximaNova-Bold"),
-    url("./fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/ProximaNova-Bold.woff") format("woff"),
-    url("./fonts/ProximaNova-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("./fonts/ProximaNova-Regular.eot");
-  src: local("./fonts/Proxima Nova Regular"), local("ProximaNova-Regular"),
-    url("./fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/ProximaNova-Regular.woff") format("woff"),
-    url("./fonts/ProximaNova-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("./fonts/ProximaNova-Extrabld.eot");
-  src: local("./fonts/Proxima Nova Extrabold"), local("ProximaNova-Extrabld"),
-    url("./fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/ProximaNova-Extrabld.woff") format("woff"),
-    url("./fonts/ProximaNova-Extrabld.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
+@import url('./fonts.css');
 
 * {
   padding: 0;
@@ -60,16 +18,6 @@ html {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: #232323;
-}
-
-a,
-span,
-p,
-b,
-h1,
-h2,
-h4 {
   color: #232323;
 }
 
@@ -110,20 +58,8 @@ a {
   display: flex;
 }
 
-.header__logo img {
+.header__logo-img {
   margin-right: 15px;
-}
-
-.header__logo h1 {
-  color: #181818;
-  font-size: 24px;
-  letter-spacing: 1%;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.header__logo p {
-  color: #7b7b7b;
 }
 
 .button {
@@ -251,11 +187,6 @@ a {
 .button--cart svg {
   margin-right: 8px;
   margin-bottom: 1px;
-}
-
-.button--cart span {
-  font-weight: 600;
-  font-size: 16px;
 }
 
 .categories ul {
@@ -452,15 +383,14 @@ body {
 }
 
 .wrapper {
-  width: calc(100vw - 100px);
+  width: 100%;
   height: 100%;
   background-color: #fff;
-  margin: 50px auto;
-  border-radius: 10px;
-  max-width: 1400px;
 }
 
 .content {
+  margin: 0 auto;
+  width: 80%;
   padding: 40px 0;
 }
 
@@ -511,5 +441,42 @@ body {
 }
 .form-search input {
   all: unset;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #f6f6f6;
+  background-color: rgb(24, 24, 24);
+}
+
+.footer__content {
+  padding: 40px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+}
+
+.footer__logo {
+  display: flex;
+  cursor: pointer;
+}
+
+.footer__logo:hover {
+  padding-top: 2px;
+}
+
+.footer__logo img {
+  margin-right: 15px;
+}
+
+.footer__logo h2 {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
