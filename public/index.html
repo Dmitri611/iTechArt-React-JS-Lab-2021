@@ -13,7 +13,16 @@
   </head>
 
   <body>
-    <div class="wrapper">
+      <form action="" id="form" class="form">
+        <div id="btnClose" class="cl-btn-2">
+          <div>
+              <div class="leftright"></div>
+              <div class="rightleft"></div>
+              <span class="close-btn">закрыть</span>
+          </div>
+      </div>
+      </form>
+    <div id="wrap" class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__logo">
@@ -54,6 +63,11 @@
                 value="&#128269;"
               />
             </form>
+          </div>
+          <div class="block_buttons_add_pizza">
+            <button id="btn" class="button">
+              <span class="button_font">Добавить пиццу</span>
+            </button>
           </div>
           <div class="block_buttons">
             <div class="block_buttons_bascet">
@@ -219,5 +233,6 @@
         </div>
       </footer>
     </div>
+    <script src="../src/js/form.js"></script>
   </body>
 </html>

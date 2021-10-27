@@ -556,7 +556,105 @@
 }
 
 .footer-cont-l-item:hover {
-  font-size: 21px;
   color: #fe5f1e;
+}
+
+.block_buttons_add_pizza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form {
+  width: 800px;
+  height: 700px;
+  background: white;
+  position: fixed;
+  top: -1500px;
+  left: 540px;
+  -webkit-transition-property: top;
+  transition-property: top;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  border: 2px solid #fe5f1e;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.cl-btn-2 {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.cl-btn-2 div {
+  cursor: pointer;
+  position: relative;
+  height: 68px;
+  width: 50px;
+}
+
+.cl-btn-2 .leftright {
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #337AB7;
+  border-radius: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.cl-btn-2 .rightleft {
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #337AB7;
+  border-radius: 2px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.cl-btn-2 .close-btn {
+  margin: 40px 0 0 -15px;
+  position: absolute;
+  color: #337AB7;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 0;
+}
+
+.cl-btn-2 div:hover .leftright {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #000;
+}
+
+.cl-btn-2 div:hover .rightleft {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #000;
+}
+
+.cl-btn-2 div:hover .close-btn {
+  opacity: 1;
 }
 /*# sourceMappingURL=app.css.map */
