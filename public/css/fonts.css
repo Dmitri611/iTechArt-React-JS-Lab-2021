@@ -42,61 +42,95 @@
   font-style: normal;
 }
 
-.header__logo-font {
+.header__logo_font {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
   color: #181818;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.header__logo-p-font {
-  color: #7b7b7b;
-}
-
-.span-font {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.footer__logo-h2-font {
-  color: rgb(255, 255, 255, 0.7);
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.button--add-span-font {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.button--add-i-font {
-  color: #fff;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 13px;
-  line-height: 22px;
-}
-
-.pizza-block__title {
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: 1%;
-  margin-bottom: 20px;
-}
-
-.pizza-block__selector-ul-li {
-  padding: 8px;
-  flex: 1;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 14px;
   user-select: none;
 }
 
-.pizza-block__price {
+.header__logo_description_font {
+  font-size: 16px;
+  line-height: 19px;
+  color: #7B7B7B;
+  user-select: none;
+}
+
+.button_font {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.list_item_font {
+  font-weight: bold;
+}
+
+.sort_item_b_font {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+  color: #2C2C2C;
+}
+
+.sort_item_b_active_font {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+  color: #FE5F1E;
+}
+
+.content__title_h2_font {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.pizza__block_heading_font {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.pizza__block_list_item_font {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.block__price_font {
   font-weight: bold;
   font-size: 22px;
   line-height: 27px;
   letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.button__add_pizza_span_font {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EB5A1E;
+}
+
+.button__add_span_font {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EB5A1E;
+}
+
+.button__add_i_font {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
 }

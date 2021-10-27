@@ -1,337 +1,799 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/svg/544pizza2_100268.svg"
+      type="image/x-icon"
+    />
+    <title>Pizza LAB</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./img/svg/544pizza2_100268.svg" type="image/x-icon">
-  <title>Pizza LAB</title>
-  <link rel="stylesheet" href="./css/app.css" />
-</head>
-
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <div class="header__logo">
-          <img class="header__logo-img" width="38" src="./img/svg/544pizza2_100268.svg" alt="Pizza logo" />
-          <div>
-            <h1 class="header__logo-font">Pizza LAB</h1>
-            <p class="header__logo-p-font">Лучшая пицца в мире!</p>
-          </div>
-        </div>
-        <div>
-          <form action="/search/" target="_blank" class="form-search">
-            <input type="hidden" name="searchid" value="808327">
-            <input type="search" name="text" required placeholder="Поиск по сайту">
-            <input type="submit" value="&#128269;">
-          </form>
-        </div>
-        <div class="header__container">
-          <div>
-            <a href="" class="button button--cart">
-              <span class="span-font">Корзина</span>
-            </a>
-          </div>
-          <a href="" class="button button--cart">
-            <span class="span-font">Войти</span>
-            <div class="button__delimiter"></div>
-            <span class="span-font">Регистрация</span>
-          </a>
-        </div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="container">
-        <div class="content__top">
-          <div class="categories">
-            <ul>
-              <li class=" categories-ul-li active">Все</li>
-              <li class=" categories-ul-li">Мясные</li>
-              <li class=" categories-ul-li">Вегетарианская</li>
-              <li class=" categories-ul-li">Гриль</li>
-              <li class=" categories-ul-li">Острые</li>
-              <li class=" categories-ul-li">Закрытые</li>
-            </ul>
-          </div>
-          <div class="sort">
-            <div class="sort__label">
-              <svg class="sort__label-svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M10 5C10 5.16927 9.93815 5.31576 9.81445 5.43945C9.69075 5.56315 9.54427 5.625 9.375 5.625H0.625C0.455729 5.625 0.309245 5.56315 0.185547 5.43945C0.061849 5.31576 0 5.16927 0 5C0 4.83073 0.061849 4.68424 0.185547 4.56055L4.56055 0.185547C4.68424 0.061849 4.83073 0 5 0C5.16927 0 5.31576 0.061849 5.43945 0.185547L9.81445 4.56055C9.93815 4.68424 10 4.83073 10 5Z"
-                  fill="#2C2C2C" />
-              </svg>
-              <b class="sort__label-b">Сортировка по:</b>
-              <span class="sort__label-span">популярности</span>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__logo">
+            <div class="header__logo_top">
+              <div class="header__logo_img">
+                <img
+                  width="38"
+                  src="./img/svg/544pizza2_100268.svg"
+                  alt="Pizza logo"
+                />
+              </div>
+              <div class="header__logo_text">
+                <h1 class="header__logo_font">pizza lab</h1>
+              </div>
             </div>
-            <div class="sort__popup">
-              <ul class="sort__popup-ul">
-                <li class="sort__popup-ul-li sort__popup-active">популярности</li>
-                <li class="sort__popup-ul-li">цене</li>
-                <li class="sort__popup-ul-li">алфавиту</li>
-              </ul>
+            <div class="header__logo_description">
+              <p class="header__logo_description_font">Лучшая пицца в мире!</p>
+            </div>
+          </div>
+          <div class="block_search">
+            <form action="/search/" target="_blank" class="form_search">
+              <input
+                class="form_search_input"
+                type="hidden"
+                name="searchid"
+                value="808327"
+              />
+              <input
+                class="form_search_input"
+                type="search"
+                name="text"
+                required
+                placeholder="Поиск по сайту"
+              />
+              <input
+                class="form_search_input"
+                type="submit"
+                value="&#128269;"
+              />
+            </form>
+          </div>
+          <div class="block_buttons">
+            <div class="block_buttons_bascet">
+              <button class="button">
+                <span class="button_font">Корзина</span>
+              </button>
+            </div>
+            <div class="block_buttons_authorization">
+              <button class="button">
+                <div class="button_content">
+                  <span class="button_font">Войти</span>
+                  <div class="button__delimiter"></div>
+                  <span class="button_font">Регистрация</span>
+                </div>
+              </button>
             </div>
           </div>
         </div>
-        <h2 class="content__title">Все пиццы</h2>
-        <div class="content__items">
-          <div class="pizza-block">
-            <img class="pizza-block__image"
-              src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
-              alt="Pizza" />
-            <h4 class="pizza-block__title">Мексиканская</h4>
-            <div class="pizza-block__selector">
-              <ul class="pizza-block__selector-ul">
-                <li class="pizza-block__selector-ul-li pizza-block-active ">тонкое</li>
-                <li class="pizza-block__selector-ul-li">традиционное</li>
-              </ul>
-              <ul>
-                <li class="active">26 см.</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
-            <div class="pizza-block__bottom">
-              <div class="pizza-block__price">от 17.90р</div>
-              <div class="button button--outline button--add">
-                <svg class="button--add-svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-                    fill="white" />
-                </svg>
-                <span class="button--add-span-font">Добавить</span>
-                <i class="button--add-i button--add-i-font">0</i>
+      </header>
+      <main>
+        <div class="content">
+          <div class="content__container">
+            <div class="container__top">
+              <div class="categories">
+                <ul class="categories_list">
+                  <li class="list_item_active list_item_font">Все</li>
+                  <li class="categories_list_item list_item_font">Мясные</li>
+                  <li class="categories_list_item list_item_font">
+                    Вегетарианская
+                  </li>
+                  <li class="categories_list_item list_item_font">Гриль</li>
+                  <li class="categories_list_item list_item_font">Острые</li>
+                  <li class="categories_list_item list_item_font">Закрытые</li>
+                </ul>
+              </div>
+              <div class="sort">
+                <div class="sort_items">
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 5C10 5.16927 9.93815 5.31576 9.81445 5.43945C9.69075 5.56315 9.54427 5.625 9.375 5.625H0.625C0.455729 5.625 0.309245 5.56315 0.185547 5.43945C0.061849 5.31576 0 5.16927 0 5C0 4.83073 0.061849 4.68424 0.185547 4.56055L4.56055 0.185547C4.68424 0.061849 4.83073 0 5 0C5.16927 0 5.31576 0.061849 5.43945 0.185547L9.81445 4.56055C9.93815 4.68424 10 4.83073 10 5Z"
+                      fill="#2C2C2C"
+                    />
+                  </svg>
+                  <div class="sort_items_padd">
+                    <span class="sort_item_b_font"> Сортировка по: </span>
+                  </div>
+                  <div class="sort_items_padd">
+                    <span class="sort_item_b_active_font">популярности</span>
+                  </div>
+                </div>
+                <div class="sort__popup">
+                  <ul class="sort__popup_list">
+                    <li
+                      class="sort__popup_list_item sort__popup_list_item_active"
+                    >
+                      популярности
+                    </li>
+                    <li class="sort__popup_list_item">цене</li>
+                    <li class="sort__popup_list_item">алфавиту</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="pizza-block">
-            <img class="pizza-block__image"
-              src="https://dodopizza-a.akamaihd.net/static/Img/Products/a5d272351fe241b1a90b3e10d2b5e2d0_292x292.jpeg"
-              alt="Pizza" />
-            <h4 class="pizza-block__title">Четыре сезона</h4>
-            <div class="pizza-block__selector">
-              <ul>
-                <li class="active">тонкое</li>
-                <li>традиционное</li>
-              </ul>
-              <ul>
-                <li class="active">26 см.</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
-            <div class="pizza-block__bottom">
-              <div class="pizza-block__price">от 14,90р</div>
-              <div class="button button--outline button--add">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-                    fill="white" />
-                </svg>
-                <span>Добавить</span>
-                <i>0</i>
-              </div>
-            </div>
-          </div>
-          <div class="pizza-block">
-            <img class="pizza-block__image"
-              src="https://dodopizza-a.akamaihd.net/static/Img/Products/304d6f7fc2e64ebd90129541e515085b_292x292.jpeg"
-              alt="Pizza" />
-            <h4 class="pizza-block__title">Пепперони</h4>
-            <div class="pizza-block__selector">
-              <ul>
-                <li class="active">тонкое</li>
-                <li>традиционное</li>
-              </ul>
-              <ul>
-                <li class="active">26 см.</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
-            <div class="pizza-block__bottom">
-              <div class="pizza-block__price">от 10.90р</div>
-              <div class="button button--outline button--add">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-                    fill="white" />
-                </svg>
-                <span>Добавить</span>
-                <i>0</i>
-              </div>
-            </div>
-          </div>
-          <div class="pizza-block">
-            <img class="pizza-block__image"
-              src="https://dodopizza-a.akamaihd.net/static/Img/Products/2ea16022779e4e46acd70a19f397ba8f_292x292.jpeg"
-              alt="Pizza" />
-            <h4 class="pizza-block__title">Сырная</h4>
-            <div class="pizza-block__selector">
-              <ul>
-                <li class="active">тонкое</li>
-                <li>традиционное</li>
-              </ul>
-              <ul>
-                <li class="active">26 см.</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
-            <div class="pizza-block__bottom">
-              <div class="pizza-block__price">от 5.90р</div>
-              <div class="button button--outline button--add">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-                    fill="white" />
-                </svg>
-                <span>Добавить</span>
-                <i>0</i>
-              </div>
-            </div>
-          </div>
-          <div class="pizza-block">
-            <img class="pizza-block__image"
-              src="https://dodopizza-a.akamaihd.net/static/Img/Products/9c266b8abec94fbea60cd33df77144bf_292x292.jpeg"
-              alt="Pizza" />
-            <h4 class="pizza-block__title">Песто</h4>
-            <div class="pizza-block__selector">
-              <ul>
-                <li class="active">тонкое</li>
-                <li>традиционное</li>
-              </ul>
-              <ul>
-                <li class="active">26 см.</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
-            <div class="pizza-block__bottom">
-              <div class="pizza-block__price">от 17.90р</div>
-              <div class="button button--outline button--add">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-                    fill="white" />
-                </svg>
-                <span>Добавить</span>
-                <i>0</i>
-              </div>
-            </div>
-          </div>
-          <div class="pizza-block">
-            <img class="pizza-block__image"
-              src="https://dodopizza-a.akamaihd.net/static/Img/Products/4f1f878793e844429ab58d73c857e80e_292x292.jpeg"
-              alt="Pizza" />
-            <h4 class="pizza-block__title">Мясная</h4>
-            <div class="pizza-block__selector">
-              <ul>
-                <li class="active">тонкое</li>
-                <li>традиционное</li>
-              </ul>
-              <ul>
-                <li class="active">26 см.</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
-            <div class="pizza-block__bottom">
-              <div class="pizza-block__price">от 17.90р</div>
-              <div class="button button--outline button--add">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-                    fill="white" />
-                </svg>
-                <span>Добавить</span>
-                <i>0</i>
-              </div>
-            </div>
-          </div>
-          <div class="pizza-block">
-            <img class="pizza-block__image"
-              src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/1fb140b6-5660-4c25-a4c4-fc25c68c7ebb.jpg"
-              alt="Pizza" />
-            <h4 class="pizza-block__title">Маргарита</h4>
-            <div class="pizza-block__selector">
-              <ul>
-                <li class="active">тонкое</li>
-                <li>традиционное</li>
-              </ul>
-              <ul>
-                <li class="active">26 см.</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
-            <div class="pizza-block__bottom">
-              <div class="pizza-block__price">от 5.90р</div>
-              <div class="button button--outline button--add">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-                    fill="white" />
-                </svg>
-                <span>Добавить</span>
-                <i>0</i>
-              </div>
-            </div>
-          </div>
-          <div class="pizza-block">
-            <img class="pizza-block__image"
-              src="https://dodopizza-a.akamaihd.net/static/Img/Products/2526fb7e2bde48539be324571dbf81b6_292x292.jpeg"
-              alt="Pizza" />
-            <h4 class="pizza-block__title">Гавайская</h4>
-            <div class="pizza-block__selector">
-              <ul>
-                <li class="active">тонкое</li>
-                <li>традиционное</li>
-              </ul>
-              <ul>
-                <li class="active">26 см.</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
-            <div class="pizza-block__bottom">
-              <div class="pizza-block__price">от 14.90р</div>
-              <div class="button button--outline button--add">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-                    fill="white" />
-                </svg>
-                <span>Добавить</span>
-                <i>0</i>
+            <div class="content__title">
+              <h2 class="content__title_h2_font">Все пиццы</h2>
+              <div class="content__items">
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__block">
+                  <div class="pizza__block_image">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/338a8304-9227-44fa-b326-95c1472c95e1.jpg"
+                      alt="Pizza"
+                    />
+                  </div>
+                  <div class="pizza__block_heading">
+                    <h4 class="pizza__block_heading_font">Мексиканская</h4>
+                  </div>
+                  <div class="pizza__block__content">
+                    <ul class="pizza__block_list">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        тонкое
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        традиционное
+                      </li>
+                    </ul>
+                    <ul class="pizza__block_list2">
+                      <li
+                        class="
+                          pizza__block_list_item
+                          pizza__block_list_item_font
+                          pizza__block_list_item_active
+                        "
+                      >
+                        26
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        30
+                      </li>
+                      <li
+                        class="
+                          pizza__block_list_item pizza__block_list_item_font
+                        "
+                      >
+                        36
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pizza__block__bottom">
+                    <div class="pizza__block_price">
+                      <span class="block__price_font"> от 17.90р </span>
+                    </div>
+                    <div class="pizza__block__bottom_btn">
+                      <button class="button__add">
+                        <div class="button__add_plus"></div>
+                        <div class="button__add_span">
+                          <span class="button__add_span_font">Добавить</span>
+                        </div>
+                        <div class="button__add_i">
+                          <i class="button__add_i_font">2</i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__content">
-        <div class="footer__logo">
-          <img class="footer__logo-img" width="38" src="./img/svg/544pizza2_100268.svg" alt="Pizza logo" />
-            <h2 class="footer__logo-h2-font">Pizza LAB</h2>
+      </main>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img class="footer__logo-img" width="38" src="./img/svg/544pizza2_100268.svg" alt="Pizza logo" />
+              <h2 class="footer__logo-h2-font">Pizza LAB</h2>
+          </div>
+          <ul class="footer__content__list">
+              <li><a class="footer-cont-l-item" href="">О Нас</a></li>
+              <li><a class="footer-cont-l-item" href="">Оставить отзыв</a></li>
+              <li><a class="footer-cont-l-item" href="">Работа у нас</a></li>
+              <li><a class="footer-cont-l-item" href="">Акции</a></li>
+              <li><a class="footer-cont-l-item" href="">Контакты</a></li>
+          </ul>
         </div>
-<<<<<<< HEAD
-        <ul class="footer__content__list">
-            <li><a class="footer-cont-l-item" href="">О Нас</a></li>
-            <li><a class="footer-cont-l-item" href="">Оставить отзыв</a></li>
-            <li><a class="footer-cont-l-item" href="">Работа у нас</a></li>
-            <li><a class="footer-cont-l-item" href="">Акции</a></li>
-            <li><a class="footer-cont-l-item" href="">Контакты</a></li>
-        </ul>
-      </div>
-=======
-        <div>
-          О нас
-        </div>
->>>>>>> 5cae7956705c2bbd7b96d5edd5b06bc8af32dd44
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
