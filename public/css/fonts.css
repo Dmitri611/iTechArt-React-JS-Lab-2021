@@ -67,6 +67,7 @@
 
 .list_item_font {
   font-weight: bold;
+  user-select: none;
 }
 
 .sort_item_b_font {
