@@ -4,7 +4,7 @@ const Wrapper = document.getElementById("wrap");
 const BtnClose = document.getElementById("btnClose")
 
 BtnAdd.addEventListener("click", () => {
-    Form.style.top="150px";
+    Form.style.top="80px";
     Wrapper.classList.add("blur");
 });
 
@@ -12,4 +12,3 @@ BtnClose.addEventListener("click", () => {
     Wrapper.classList.remove("blur");
     Form.style.top="-1500px";
 });
-
