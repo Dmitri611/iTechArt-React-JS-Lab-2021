@@ -315,6 +315,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 600px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -335,6 +336,7 @@
 
 .pizza__block_image {
   width: 260px;
+  min-height: 306px;
   cursor: pointer;
   padding-bottom: 10px;
   -webkit-transition: 0.5s;
@@ -349,6 +351,7 @@
 }
 
 .pizza__block_heading {
+  min-height: 34px;
   padding-bottom: 10px;
 }
 

@@ -245,6 +245,7 @@
 
 .content__items {
   display: flex;
+  min-height: 600px;
   flex-wrap: wrap;
   justify-content: start;
   padding-top: 50px;
@@ -263,6 +264,7 @@
 
 .pizza__block_image {
   width: 260px;
+  min-height: 306px;
   cursor: pointer;
   padding-bottom: 10px;
   transition: 0.5s;
@@ -276,6 +278,7 @@
 }
 
 .pizza__block_heading {
+  min-height: 34px;
   padding-bottom: 10px;
 }
 
