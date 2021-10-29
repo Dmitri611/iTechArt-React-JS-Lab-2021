@@ -6,6 +6,10 @@ const BtnClose = document.getElementById("btnClose")
 BtnAdd.addEventListener("click", () => {
     Form.style.top="80px";
     Wrapper.classList.add("blur");
+
+    if (window.matchMedia("(max-width: 1440px)").matches) {
+        Form.style.top="7px"
+    }
 });
 
 BtnClose.addEventListener("click", () => {

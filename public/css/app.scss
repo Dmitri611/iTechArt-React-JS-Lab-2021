@@ -732,3 +732,15 @@
 .cl-btn-2 div:hover .close-btn {
   opacity: 1;
 }
+
+@media (max-width: 1440px) {
+
+  .content {
+    width: 82%;
+  }
+
+  .form {
+    left: 340px;
+  }
+
+}
