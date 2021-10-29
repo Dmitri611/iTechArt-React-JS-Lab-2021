@@ -188,6 +188,10 @@
           justify-content: space-between;
 }
 
+.categories_burger {
+  display: none;
+}
+
 .categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,12 +290,12 @@
 
 .sort__popup_list_item:hover {
   background: rgba(254, 95, 30, 0.05);
-  color: #FE5F1E;
+  color: #fe5f1e;
 }
 
 .sort__popup_list_item_active {
   background: rgba(254, 95, 30, 0.05);
-  color: #FE5F1E;
+  color: #fe5f1e;
   cursor: auto;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -444,8 +448,8 @@
 .button__add {
   width: 155px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #EB5A1E;
+  background: #ffffff;
+  border: 1px solid #eb5a1e;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 30px;
@@ -454,7 +458,7 @@
 }
 
 .button__add:hover {
-  background: #EB5A1E;
+  background: #eb5a1e;
 }
 
 .button__add:hover .button__add_plus {
@@ -470,7 +474,7 @@
 }
 
 .button__add:hover .button__add_i_font {
-  color: #EB5A1E;
+  color: #eb5a1e;
 }
 
 .button__add:active {
@@ -917,8 +921,8 @@
   border-radius: 2px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .cl-btn-2 .rightleft {
@@ -930,8 +934,8 @@
   border-radius: 2px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .cl-btn-2 .close-btn {
@@ -942,8 +946,8 @@
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   opacity: 0;
 }
 
@@ -969,6 +973,23 @@
   }
   .form {
     left: 340px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .categories_list_item {
+    padding: 13px 16px;
+  }
+  .list_item_active {
+    padding: 13px 30px;
+  }
+  .pizza__block {
+    width: 460px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .form {
+    left: 240px;
   }
 }
 /*# sourceMappingURL=app.css.map */
