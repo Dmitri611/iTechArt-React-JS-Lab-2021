@@ -87,10 +87,6 @@
   cursor: pointer;
 }
 
-.sort_item_b_active_font:hover {
-  font-size: 16px;
-}
-
 .content__title_h2_font {
   font-weight: bold;
   font-size: 32px;
