@@ -204,6 +204,7 @@
 }
 
 .sort__popup {
+  display: none;
   position: absolute;
   right: 0;
   margin-top: 15px;
@@ -213,6 +214,7 @@
   overflow: hidden;
   padding: 10px 0;
   width: 160px;
+  cursor: pointer;
 }
 
 .sort__popup_list {
