@@ -6,3 +6,7 @@ document.addEventListener("click", function (e) {
     sortPopup.style.display = sortPopup.style.display != "flex" ? "flex" : "none";
   }
 });
+
+
+
+

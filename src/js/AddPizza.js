@@ -5,37 +5,44 @@ const inputPricePizza = document.getElementById('inputPricePizza');
 const containerNewPizza = document.querySelector('.content__items');
 
 // localStorage
-let pizza;
-if(localStorage.getItem('pizza')) {
-  pizza = JSON.parse(localStorage.getItem('pizza'))
+let catalogPizza;
+let pizzaAll;
+if(localStorage.getItem('catalogPizza')) {
+  catalogPizza = JSON.parse(localStorage.getItem('catalogPizza'));
+  pizzaAll = catalogPizza;
+  getPizzaLocalStorage(pizzaAll);
 } else {
-  pizza = {
-    'key' : [],
+  pizzaAll = {};
+  localStorage.setItem('catalogPizza', pizzaAll)
+}
+
+function getPizzaLocalStorage(pizzas){
+  let pizzaType = Object.values(pizzas);
+  
+  while(pizzaType.length){
+    let pizza = pizzaType.shift();
+    showPizza(pizza);
   }
 }
 
-function LoadPizzaLocalStorage() {
-  let array = pizza.key;
-  array.forEach(element => {
-    let div = document.createElement('div');
-    containerNewPizza.prepend(div);
-    div.innerHTML = element;
-  });
-
-}
-
-LoadPizzaLocalStorage()
-
-btnAdd.addEventListener('click', () => {
+function showPizza(pizza){
   let div = document.createElement('div');
+  div.className = `${pizza.name}`
   containerNewPizza.prepend(div);
   div.innerHTML = `
     <div class="pizza__block">
     <div class="pizza__block_image">
-      <img src= "${inputURL.value}" alt="Pizza"/>
+      <div class="btn_del_pizza">
+        <div class = "pizza_delete" id ="${pizza.name}" >
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+          <span class="close-btn">удалить</span>
+        </div>
+      </div>
+      <img src= "${pizza.image}" alt="Pizza"/>
     </div>
     <div class="pizza__block_heading">
-      <h4 class="pizza__block_heading_font">${inputNamePizza.value}</h4>
+      <h4 class="pizza__block_heading_font">${pizza.name}</h4>
     </div>
     <div class="pizza__block__content">
       <ul class="pizza__block_list">
@@ -61,7 +68,7 @@ btnAdd.addEventListener('click', () => {
     </div>
     <div class="pizza__block__bottom">
       <div class="pizza__block_price">
-        <span class="block__price_font"> от ${inputPricePizza.value}р </span>
+        <span class="block__price_font"> от ${pizza.price}р </span>
       </div>
       <div class="pizza__block__bottom_btn">
         <div class="button__add">
@@ -77,9 +84,45 @@ btnAdd.addEventListener('click', () => {
     </div>
   </div>
 `
-  pizza['key'].push(div.innerHTML);
-  localStorage.setItem('pizza', JSON.stringify(pizza));
+}
+
+btnAdd.addEventListener('click', () => {
+  let pizzaType = {
+    'name':inputNamePizza.value,
+    'price': inputPricePizza.value,
+    'image': inputURL.value,
+  }
+
+  let namePizza = inputNamePizza.value;
+  pizzaAll[namePizza] = pizzaType;
+  let a = JSON.stringify(pizzaAll);
+  localStorage.setItem('catalogPizza', a);
+  showPizza(pizzaType);
 });
+
+//delete pizza
+const thisPizza = document.querySelectorAll('.pizza_delete');
+thisPizza.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    let remove = e.target.id;
+    for (let key in catalogPizza) {
+
+      if(key === remove){
+        let deletePizza = document.querySelector(`.${key}`);
+        delete catalogPizza[key]
+
+        localStorage.setItem('catalogPizza', JSON.stringify(catalogPizza));
+        catalogPizza = JSON.parse(localStorage.getItem('catalogPizza'));
+        getPizzaLocalStorage(catalogPizza);
+        console.log(remove)
+        console.log(deletePizza)
+        deletePizza.remove();
+      }
+    }
+  });
+  
+});
+
 
 
 
