@@ -1,4 +1,6 @@
-export default function showPizza(pizza) {
+import delPizza from "./deletePizza.js";
+
+export default function showPizza(pizza, thisPizza) {
     const containerNewPizza = document.querySelector('.content__items');
     let div = document.createElement("div");
     div.className = `${pizza.name}`;
