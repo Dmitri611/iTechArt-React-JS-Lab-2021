@@ -1,5 +1,3 @@
-
-
 export default function showPizza(pizza) {
     const containerNewPizza = document.querySelector('.content__items');
     let div = document.createElement("div");

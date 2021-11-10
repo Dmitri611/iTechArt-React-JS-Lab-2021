@@ -10,7 +10,7 @@ export default function delPizza(catalogPizza, getPizzaLocalStorage) {
 
           localStorage.setItem("catalogPizza", JSON.stringify(catalogPizza));
           catalogPizza = JSON.parse(localStorage.getItem("catalogPizza"));
-          getPizzaLocalStorage(catalogPizza);
+          // getPizzaLocalStorage(catalogPizza);
           deletePizza.remove();
         }
       }
