@@ -8,13 +8,13 @@ export default function showPizza(pizza, thisPizza) {
     div.innerHTML = `
       <div class="pizza__block">
       <div class="pizza__block_image">
-        <div class="btn_del_pizza">
-          <div class = "pizza_delete" id ="${pizza.name}" >
-            <div class="leftright"></div>
-            <div class="rightleft"></div>
-            <span class="close-btn">удалить</span>
-          </div>
-        </div>
+      <div class="btn_del_pizza">
+      <div class = "pizza_delete" id ="${pizza.name}" >
+        <div class="leftright"></div>
+        <div class="rightleft"></div>
+        <span class="close-btn">удалить</span>
+      </div>
+    </div>
         <img src= "${pizza.image}" alt="Pizza"/>
       </div>
       <div class="pizza__block_heading">

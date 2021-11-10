@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/svg/544pizza2_100268.svg"
+      type="image/x-icon"
+    />
+    <title>Pizza LAB</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+
+  <body>
+    <div id="wrap" class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__logo">
+            <div class="header__logo_top">
+              <div class="header__logo_img">
+                <img
+                  width="38"
+                  src="./img/svg/544pizza2_100268.svg"
+                  alt="Pizza logo"
+                />
+              </div>
+              <div class="header__logo_text">
+                <h1 class="header__logo_font">pizza lab</h1>
+              </div>
+            </div>
+            <div class="header__logo_description">
+              <p class="header__logo_description_font">Лучшая пицца в мире!</p>
+            </div>
+          </div>
+          <div class="block_search">
+            <form action="/search/" target="_blank" class="form_search">
+              <input
+                class="form_search_input"
+                type="hidden"
+                name="searchid"
+                value="808327"
+              />
+              <input
+                class="form_search_input"
+                type="search"
+                name="text"
+                required
+                placeholder="Поиск по сайту"
+              />
+              <input
+                class="form_search_input"
+                type="submit"
+                value="&#128269;"
+              />
+            </form>
+          </div>
+          <div class="block_buttons_add_pizza">
+            <button id="btn" class="button">
+              <a href="./index.html"class="button_font button_admin_font">Админ</a>
+            </button>
+          </div>
+          <div class="block_buttons">
+            <div class="block_buttons_bascet">
+              <button class="button">
+                <span class="button_font">Корзина</span>
+              </button>
+            </div>
+            <div class="block_buttons_authorization">
+              <div class="button">
+                <div class="button_content">
+                  <span class="button_font">Войти</span>
+                  <div class="button__delimiter"></div>
+                  <span class="button_font">Регистрация</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container1024">
+          <div class="block_buttons_add_pizza1024">
+            <button id="btn" class="button">
+              <a href="./index.html" class="button_font button_admin_font">Админ</a>
+            </button>
+          </div>
+          <div class="block_buttons1024">
+            <div class="block_buttons_bascet">
+              <button class="button">
+                <span class="button_font">Корзина</span>
+              </button>
+            </div>
+            <div class="block_buttons_authorization">
+              <div class="button">
+                <div class="button_content">
+                  <span class="button_font">Войти</span>
+                  <div class="button__delimiter"></div>
+                  <span class="button_font">Регистрация</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="content">
+          <div class="content__container">
+            <div class="container__top">
+              <div class="categories">
+                <ul class="categories_list">
+                  <li class="list_item_active list_item_font">Все</li>
+                  <li class="categories_list_item list_item_font">Мясные</li>
+                  <li class="categories_list_item list_item_font">
+                    Вегетарианская
+                  </li>
+                  <li class="categories_list_item list_item_font">Гриль</li>
+                  <li class="categories_list_item list_item_font">Острые</li>
+                  <li class="categories_list_item list_item_font">Закрытые</li>
+                </ul>
+              </div>
+              <div class="sort">
+                <div class="sort_items">
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 5C10 5.16927 9.93815 5.31576 9.81445 5.43945C9.69075 5.56315 9.54427 5.625 9.375 5.625H0.625C0.455729 5.625 0.309245 5.56315 0.185547 5.43945C0.061849 5.31576 0 5.16927 0 5C0 4.83073 0.061849 4.68424 0.185547 4.56055L4.56055 0.185547C4.68424 0.061849 4.83073 0 5 0C5.16927 0 5.31576 0.061849 5.43945 0.185547L9.81445 4.56055C9.93815 4.68424 10 4.83073 10 5Z"
+                      fill="#2C2C2C"
+                    />
+                  </svg>
+                  <div class="sort_items_padd">
+                    <span class="sort_item_b_font"> Сортировка по: </span>
+                  </div>
+                  <div class="sort_items_padd">
+                    <span id="popup" class="sort_item_b_active_font">популярности</span>
+                  </div>
+                </div>
+                <div id="sortPopup" class="sort__popup">
+                  <ul class="sort__popup_list">
+                    <li
+                      class="sort__popup_list_item sort__popup_list_item_active"
+                    >
+                      популярности
+                    </li>
+                    <li class="sort__popup_list_item">цене</li>
+                    <li class="sort__popup_list_item">алфавиту</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content__title">
+              <h2 class="content__title_h2_font">Все пиццы</h2>
+              <div class="content__items">
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img class="footer__logo-img" width="38" src="./img/svg/544pizza2_100268.svg" alt="Pizza logo" />
+              <h2 class="footer__logo-h2-font">Pizza LAB</h2>
+          </div>
+          <ul class="footer__content__list">
+              <li><a class="footer-cont-l-item" href="">О Нас</a></li>
+              <li><a class="footer-cont-l-item" href="">Оставить отзыв</a></li>
+              <li><a class="footer-cont-l-item" href="">Работа у нас</a></li>
+              <li><a class="footer-cont-l-item" href="">Акции</a></li>
+              <li><a class="footer-cont-l-item" href="">Контакты</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="../src/js/popup.js"></script>
+    <script type="module" src="../src/js/UserShowPizza.js"></script>
+  </body>
+</html>

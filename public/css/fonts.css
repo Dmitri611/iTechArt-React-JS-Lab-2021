@@ -65,6 +65,10 @@
   color: #FFFFFF;
 }
 
+.button_admin_font {
+  text-decoration: none;
+}
+
 .list_item_font {
   font-weight: bold;
   user-select: none;

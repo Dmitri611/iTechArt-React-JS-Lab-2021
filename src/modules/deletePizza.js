@@ -6,7 +6,6 @@ export default function delPizza(catalogPizza, getPizzaLocalStorage, thisPizza) 
       for (let key in catalogPizza) {
         if (key === remove) {
           let deletePizza = document.querySelector(`.${key}`);
-          console.log(deletePizza)
           delete catalogPizza[key];
           localStorage.setItem("catalogPizza", JSON.stringify(catalogPizza));
           catalogPizza = JSON.parse(localStorage.getItem("catalogPizza"));
