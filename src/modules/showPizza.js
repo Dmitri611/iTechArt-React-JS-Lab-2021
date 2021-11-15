@@ -20,6 +20,9 @@ export default function showPizza(pizza, thisPizza) {
       <div class="pizza__block_heading">
         <h4 class="pizza__block_heading_font">${pizza.name}</h4>
       </div>
+      <div class="pizza__block__ingredients">
+      <p class="pizza__block_list_item_font">${pizza.ingredients}</p>
+      </div>
       <div class="pizza__block__content">
         <ul class="pizza__block_list">
           <li class=" pizza__block_list_item pizza__block_list_item_font pizza__block_list_item_active">

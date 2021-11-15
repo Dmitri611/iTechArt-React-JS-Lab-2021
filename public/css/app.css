@@ -372,6 +372,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 6px;
+  margin-top: 10px;
 }
 
 .pizza__block_list {
@@ -1038,6 +1039,19 @@
 
 .btn_del_pizza div:hover .close-btn {
   opacity: 1;
+}
+
+.pizza__block__ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 6px;
 }
 
 @media (max-width: 1440px) {

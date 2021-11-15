@@ -3,6 +3,8 @@ import {
   inputURL,
   inputNamePizza,
   inputPricePizza,
+  inputIngredients,
+  inputCategory,
 } from "../modules/variables.js";
 
 import showPizza from '../modules/showPizza.js';
@@ -28,6 +30,8 @@ btnAdd.addEventListener("click", () => {
     name: inputNamePizza.value,
     price: inputPricePizza.value,
     image: inputURL.value,
+    ingredients: inputIngredients.value,
+    category: inputCategory.value,
   };
 
   let namePizza = inputNamePizza.value;
@@ -38,3 +42,5 @@ btnAdd.addEventListener("click", () => {
   deletePizza(catalogPizza, getPizzaLocalStorage, thisPizza);
 });
 deletePizza(catalogPizza, getPizzaLocalStorage, thisPizza);
+
+
