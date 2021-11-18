@@ -1,0 +1,35 @@
+.button__delimiter {
+    width: 1px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+  
+  .block_buttons_authorization {
+    display: flex;
+    padding-left: 30px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #fe5f1e;
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px 30px;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    border: 1px solid transparent;
+    user-select: none;
+  
+    &:hover {
+      background-color: #f24701;
+    }
+  
+    &:active {
+      background-color: #de4101;
+      transform: translateY(1px);
+    }
+  }

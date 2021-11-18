@@ -1,0 +1,31 @@
+
+.header {
+    border-bottom: 1px solid #f6f6f6;
+    padding: 40px 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .block_buttons {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .block_buttons_bascet {
+    display: flex;
+  }
+  
+  .button_content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }

@@ -1,0 +1,23 @@
+.header__logo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header__logo_top {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header__logo_img {
+    display: flex;
+  }
+  
+  .header__logo_text {
+    display: flex;
+    padding-left: 10px;
+  }
+  
+  .header__logo_description {
+    display: flex;
+    padding-top: 5px;
+  }
