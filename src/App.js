@@ -1,9 +1,9 @@
 import React from "react";
-import Header from './components/header/header.jsx';
-import Main from './components/main/main.jsx';
-import Footer from './components/footer/footer.jsx';
+import Header from "./components/header/header.jsx";
+import Main from "./components/main/main.jsx";
+import Footer from "./components/footer/footer.jsx";
 
-function App() {
+export default function App() {
   return (
     <div className="wrapper">
       <Header></Header>
@@ -12,5 +12,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
