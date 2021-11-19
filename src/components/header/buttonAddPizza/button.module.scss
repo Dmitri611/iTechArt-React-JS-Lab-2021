@@ -1,17 +1,4 @@
-.button__delimiter {
-    width: 1px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.25);
-    margin-left: 14px;
-    margin-right: 14px;
-  }
-  
-  .block_buttons_authorization {
-    display: flex;
-    padding-left: 30px;
-  }
-
-  .button {
+.button {
     display: inline-block;
     background-color: #fe5f1e;
     color: #fff;
@@ -32,4 +19,15 @@
       background-color: #de4101;
       transform: translateY(1px);
     }
+  }
+
+  .button_font {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+
+  .block_buttons_add_pizza {
+    display: flex;
   }

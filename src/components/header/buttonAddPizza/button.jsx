@@ -1,11 +1,11 @@
 import React from 'react';
-import './button.scss';
+import styles from './button.module.scss';
 
 export default function Button () {
     return (
-        <div className="block_buttons_add_pizza">
-            <button className="button">
-              <span className="button_font">Добавить пиццу</span>
+        <div className={styles.block_buttons_add_pizza}>
+            <button className={styles.button}>
+              <span className={styles.button_font}>Добавить пиццу</span>
             </button>
           </div>
     );

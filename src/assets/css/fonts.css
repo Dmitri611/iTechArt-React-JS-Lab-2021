@@ -42,22 +42,6 @@
   font-style: normal;
 } */
 
-.header__logo_font {
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  text-transform: uppercase;
-  color: #181818;
-  user-select: none;
-}
-
-.header__logo_description_font {
-  font-size: 16px;
-  line-height: 19px;
-  color: #7B7B7B;
-  user-select: none;
-}
-
 .button_font {
   font-weight: 600;
   font-size: 16px;
@@ -67,36 +51,6 @@
 
 .button_admin_font {
   text-decoration: none;
-}
-
-.list_item_font {
-  font-weight: bold;
-  user-select: none;
-}
-
-.sort_item_b_font {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.015em;
-  color: #2C2C2C;
-}
-
-.sort_item_b_active_font {
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.015em;
-  color: #FE5F1E;
-  user-select: none;
-  cursor: pointer;
-}
-
-.content__title_h2_font {
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 39px;
-  letter-spacing: 0.01em;
-  color: #000000;
 }
 
 .pizza__block_heading_font {

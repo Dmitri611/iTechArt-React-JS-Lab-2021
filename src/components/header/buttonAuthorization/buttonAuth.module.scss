@@ -1,4 +1,23 @@
-.button {
+.button__delimiter {
+    width: 1px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .button_content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .block_buttons_authorization {
+    display: flex;
+    padding-left: 30px;
+  }
+
+  .button {
     display: inline-block;
     background-color: #fe5f1e;
     color: #fff;
@@ -19,4 +38,11 @@
       background-color: #de4101;
       transform: translateY(1px);
     }
+  }
+
+  .button_font {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
   }

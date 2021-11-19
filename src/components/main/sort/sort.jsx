@@ -1,10 +1,10 @@
 import React from 'react';
-import './sort.scss';
+import styles from './sort.module.scss';
 
 export default function Sort () {
     return (
-        <div className="sort">
-                <div className="sort_items">
+        <div className={styles.sort}>
+                <div className={styles.sort_items}>
                   <svg
                     width="10"
                     height="6"
@@ -17,16 +17,16 @@ export default function Sort () {
                       fill="#2C2C2C"
                     />
                   </svg>
-                  <div className="sort_items_padd">
-                    <span className="sort_item_b_font"> Сортировка по: </span>
+                  <div className={styles.sort_items_padd}>
+                    <span className={styles.sort_item_b_font}> Сортировка по: </span>
                   </div>
-                  <div className="sort_items_padd">
-                    <span id="popup" className="sort_item_b_active_font">
+                  <div className={styles.sort_items_padd}>
+                    <span className={styles.sort_item_b_active_font}>
                       популярности
                     </span>
                   </div>
                 </div>
-                <div id="sortPopup" className="sort__popup">
+                {/* <div className="sort__popup">
                   <ul className="sort__popup_list">
                     <li className="sort__popup_list_item sort__popup_list_item_active">
                       популярности
@@ -34,7 +34,7 @@ export default function Sort () {
                     <li className="sort__popup_list_item">цене</li>
                     <li className="sort__popup_list_item">алфавиту</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
     );
 }

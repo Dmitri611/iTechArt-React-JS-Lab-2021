@@ -21,3 +21,19 @@
     display: flex;
     padding-top: 5px;
   }
+
+  .header__logo_font {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #181818;
+    user-select: none;
+  }
+
+  .header__logo_description_font {
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7B7B;
+    user-select: none;
+  }

@@ -14,18 +14,14 @@
   .footer__logo {
     width: 20%;
     display: flex;
-    cursor: pointer;
+    user-select: none;
   }
   
-  .footer__logo:hover {
-    padding-top: 2px;
-  }
-  
-  .footer__logo > img {
+  .footer__logo_img {
     margin-right: 15px;
   }
   
-  .footer__logo > h2 {
+  .footer__logo_font {
     color: rgb(133, 133, 133);
     font-size: 24px;
     text-transform: uppercase;
@@ -39,12 +35,12 @@
     justify-content: space-around;
   }
   
-  .footer-cont-l-item {
+  .footer_cont_l_item {
     font-size: 20px;
     color: white;
     text-decoration: none;
   }
   
-  .footer-cont-l-item:hover {
+  .footer_cont_l_item:hover {
     color: #fe5f1e;
   }

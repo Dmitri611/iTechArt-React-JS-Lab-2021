@@ -1,23 +1,27 @@
 import React from 'react';
-import './categories.scss';
+import styles from './categories.module.scss';
 
 export default function Categories () {
     return (
-        <div className="categories">
-                <ul className="categories_list">
-                  <li className="list_item_active list_item_font">Все</li>
-                  <li className="categories_list_item list_item_font">
-                    Мясные
+        <div className={styles.categories}>
+                <ul className={styles.categories_list}>
+                  <li className={styles.list_item_active}>
+                    <span className={styles.list_item_font}>Все</span>
                   </li>
-                  <li className="categories_list_item list_item_font">
-                    Вегетарианская
+                  <li className={styles.categories_list_item}>
+                    <span className={styles.list_item_font}>Мясные</span>
                   </li>
-                  <li className="categories_list_item list_item_font">Гриль</li>
-                  <li className="categories_list_item list_item_font">
-                    Острые
+                  <li className={styles.categories_list_item}>
+                    <span className={styles.list_item_font}>Вегетарианская</span>
                   </li>
-                  <li className="categories_list_item list_item_font">
-                    Закрытые
+                  <li className={styles.categories_list_item}>
+                    <span className={styles.list_item_font}>Гриль</span>
+                  </li>
+                  <li className={styles.categories_list_item}>
+                    <span className={styles.list_item_font}>Острые</span>
+                  </li>
+                  <li className={styles.categories_list_item}>
+                    <span className={styles.list_item_font}>Закрытые</span>
                   </li>
                 </ul>
               </div>

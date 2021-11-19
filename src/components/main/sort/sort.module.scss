@@ -45,3 +45,20 @@
     cursor: auto;
     user-select: none;
   }
+
+  .sort_item_b_font {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.015em;
+    color: #2C2C2C;
+  }
+
+  .sort_item_b_active_font {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.015em;
+    color: #FE5F1E;
+    user-select: none;
+    cursor: pointer;
+  }
