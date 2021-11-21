@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./components/header/header.jsx";
-import Main from "./components/main/main.jsx";
+import Content from "./components/main/content.jsx";
 import Footer from "./components/footer/footer.jsx";
 
 export default function App() {
   return (
     <div className="wrapper">
       <Header></Header>
-      <Main></Main>
+      <Content></Content>
       <Footer></Footer>
     </div>
   );

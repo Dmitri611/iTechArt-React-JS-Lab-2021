@@ -1,13 +1,11 @@
 import React from 'react';
 import Categories from './categories/categories.jsx';
 import Sort from './sort/sort.jsx';
-import styles from './main.module.scss';
+import styles from './content.module.scss';
 
-export default function Main () {
+export default function Content () {
     return (
-        <div>
         <div className={styles.content}>
-          <div className={styles.content__container}>
             <div className={styles.container__top}>
               <Categories></Categories>
               <Sort></Sort>
@@ -18,7 +16,5 @@ export default function Main () {
               </div>
             </div>
           </div>
-        </div>
-      </div>
     );
 }
