@@ -11,45 +11,11 @@
   text-decoration: none;
 }
 
-.pizza__block_heading_font {
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #000000;
-}
 
-.pizza__block_list_item_font {
-  font-weight: 600;
-  font-size: 14px;
-}
 
-.block__price_font {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  letter-spacing: 0.015em;
-  color: #000000;
-}
 
-.button__add_pizza_span_font {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  color: #EB5A1E;
-}
 
-.button__add_span_font {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  color: #EB5A1E;
-}
 
-.button__add_i_font {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 16px;
-  color: #FFFFFF;
-}
+
+
+
