@@ -11,12 +11,12 @@ export default function Header () {
         <div className={styles.header}>
         <div className={styles.container}>
           <Logo></Logo>
-          {/* <Search></Search>
+          <Search></Search>
           <Button name='Добавить пиццу'></Button>
           <div className={styles.block_buttons}>
             <Button name='Корзина'></Button>
             <ButtonAuth></ButtonAuth>
-          </div> */}
+          </div>
         </div>
       </div>
     );
