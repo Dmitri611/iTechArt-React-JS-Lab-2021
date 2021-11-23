@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import React from 'react';
 import styles from './form.module.scss';
 import CloseIcon from '@mui/icons-material/Close';
+import Button from '../header/button/button.jsx'
 
 export default function Form () {
     return (
@@ -12,7 +13,7 @@ export default function Form () {
             <h2 className="header__logo_font">Добавить пиццу</h2>
           </div>
           <div className={styles.btn_form_close}>
-          <CloseIcon fontSize='large'></CloseIcon>
+          <CloseIcon className={styles.icon} fontSize='large'></CloseIcon>
           </div>
         </div>
       <div className={styles.form__wrapper}>
@@ -76,7 +77,7 @@ export default function Form () {
             </div>
           </div>
           <div className={styles.btn_submit}>
-            <div className={classNames(styles.button, styles.button_font)}>Добавить пиццу</div>
+          <Button name="Добавить пиццу"></Button>
           </div>
         </div>
       </div>

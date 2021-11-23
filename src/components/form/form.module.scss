@@ -213,59 +213,23 @@
     align-items: center;
   }
   
-  // btn close
-  .cl-btn-2 {
-    margin: 10px;
-    display: flex;
-    justify-content: right;
+  .icon {
+   display: flex;
+
+   &:hover {
+     cursor: pointer;
+     color: #f24701;
+     transition: color 0.3s ease-in-out;
+
+   }
+
+   &:active {
+    color: #6e1f00ee;
+    transform: translateY(1px);
+    transition: color 0.15s ease-in-out;
+
   }
-  .cl-btn-2 div {
-    cursor: pointer;
-    position: relative;
-    height: 68px;
-    width: 50px;
-  }
-  .cl-btn-2 .leftright {
-    height: 3px;
-    width: 30px;
-    position: absolute;
-    margin-top: 24px;
-    background-color: #fe5f1e;
-    border-radius: 2px;
-    transform: rotate(45deg);
-    transition: all 0.3s ease-in;
-  }
-  .cl-btn-2 .rightleft {
-    height: 3px;
-    width: 30px;
-    position: absolute;
-    margin-top: 24px;
-    background-color: #fe5f1e;
-    border-radius: 2px;
-    transform: rotate(-45deg);
-    transition: all 0.3s ease-in;
-  }
-  .cl-btn-2 .close-btn {
-    margin: 40px 0 0 -15px;
-    position: absolute;
-    color: #fe5f1e;
-    font-family: Tahoma, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in;
-    opacity: 0;
-  }
-  .cl-btn-2 div:hover .leftright {
-    transform: rotate(-45deg);
-    background-color: #000;
-  }
-  .cl-btn-2 div:hover .rightleft {
-    transform: rotate(45deg);
-    background-color: #000;
-  }
-  .cl-btn-2 div:hover .close-btn {
-    opacity: 1;
+
   }
 
   //font

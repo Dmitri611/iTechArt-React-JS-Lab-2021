@@ -1,48 +1,49 @@
-.button__delimiter {
-    width: 1px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.25);
-    margin-left: 14px;
-    margin-right: 14px;
-  }
 
-  .button_content {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-  
   .block_buttons_authorization {
     display: flex;
     padding-left: 30px;
   }
 
-  .button {
-    display: inline-block;
-    background-color: #fe5f1e;
-    color: #fff;
-    border-radius: 30px;
-    padding: 15px 30px;
-    min-width: 100px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    border: 1px solid transparent;
-    user-select: none;
+  .button_log_in {
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+    background-color: #fe5f1e !important;
+    border: 1px solid transparent !important;
   
     &:hover {
-      background-color: #f24701;
+      background-color: #f24701 !important;
     }
   
     &:active {
-      background-color: #de4101;
-      transform: translateY(1px);
+      background-color: #de4101 !important;
     }
   }
 
+  .button_reg {
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    background-color: #fe5f1e !important;
+    border: 1px solid transparent !important;
+  
+    &:hover {
+      background-color: #f24701 !important;
+    }
+  
+    &:active {
+      background-color: #de4101 !important;
+    }
+  }
+
+  .button__delimiter {
+    width: 2px;
+    height: 51px;
+    background-color: #de4101;
+
+  }
+
   .button_font {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    text-transform: none !important;
   }
