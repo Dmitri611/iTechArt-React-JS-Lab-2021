@@ -2,10 +2,10 @@ import { style } from "@mui/system";
 import React from "react";
 import styles from "./basket.module.scss";
 import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
+import Button from '../header/button/button.jsx'
 
 export default function Bascet() {
   return (
-    <div className={styles.basket__wrapper}>
       <div className={styles.basket__content}>
         <div className={styles.heading__content}>
           <h2 className={styles.heading_font}>Корзина пустая</h2>
@@ -24,11 +24,8 @@ export default function Bascet() {
             <div className={styles.image}></div>
         </div>
         <div className={styles.button__content}>
-        <button className={styles.button}>
-              <span className={styles.button_font}>Вернуться назад</span>
-        </button>
+        <Button name="Вернуться назад"></Button>
         </div>
       </div>
-    </div>
   );
 }

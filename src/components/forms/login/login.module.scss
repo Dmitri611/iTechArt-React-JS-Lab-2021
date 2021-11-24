@@ -1,0 +1,82 @@
+.form {
+    width: 377px;
+    height: 377px;
+    background: white;
+    position: fixed;
+    top: 240px;
+    left: 780px;
+    transition-property: top;
+    transition-duration: 2s;
+    border: 2px solid #fe5f1e;
+    border-radius: 30px;
+    z-index: 999;
+  }
+
+.form__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+.form__heading {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+
+.btn_form_close {
+    display: flex;
+    margin: 11px;
+  }
+
+.content {
+  display: flex;
+  padding: 0px 30px 30px 30px;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 19px;
+  color: #7B7B7B;
+  user-select: none;
+}
+
+.phone {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 30px;
+  flex-direction: column;
+}
+
+.phone_p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.phone_input{
+  display: flex;
+  padding-top: 30px;
+}
+
+.add_photo_input_text {
+  border: 1px solid #fe5f1e;
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 15px;
+}
+
+.header__logo_description_font {
+  font-size: 16px;
+  line-height: 19px;
+  color: #7B7B7B;
+  user-select: none;
+}
+
+.button {
+  padding-top: 40px;
+  padding-left: 100px;
+}
