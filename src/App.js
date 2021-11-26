@@ -10,8 +10,8 @@ export default function App() {
       <Layout>
         <Content></Content>
       </Layout>
-      {/* <Form></Form> */}
-      {/* <Login></Login> */}
+      {/* <Form></Form>
+      <Login></Login> */}
     </div>
   );
 }

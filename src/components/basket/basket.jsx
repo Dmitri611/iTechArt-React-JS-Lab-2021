@@ -17,8 +17,8 @@ export default function Bascet() {
           </div>
         </div>
         <div className={styles.description}>
-            <p className={styles.description_font}>Вероятней всего, вы не заказывали ещё пиццу.</p>
-            <p className={styles.description_font}>Для того, чтобы заказать пиццу, перейди на главную страницу.</p>
+            <p className={styles.description_font}>Вероятней всего, вы не авторизовались.</p>
+            <p className={styles.description_font}>Для того, чтобы заказать пиццу, перейди на главную страницу и авторизуйтесь.</p>
         </div>
         <div className={styles.image__content}>
             <div className={styles.image}></div>
