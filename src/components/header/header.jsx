@@ -14,8 +14,7 @@ export default function Header () {
           <Search></Search>
           {/* <Button name='Добавить пиццу'></Button> */}
           <div className={styles.block_buttons}>
-            <Button name='Корзина'></Button>
-            {/* <ButtonAuth></ButtonAuth> */}
+            <Button to="/basket" name='Корзина'></Button>
             <Button name="Войти"></Button>
           </div>
         </div>
