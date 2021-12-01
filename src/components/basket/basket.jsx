@@ -2,7 +2,8 @@ import { style } from "@mui/system";
 import React from "react";
 import styles from "./basket.module.scss";
 import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
-import Button from '../header/button/button.jsx'
+import Button from '../header/button/button.jsx';
+import {Link} from "react-router-dom";
 
 export default function Bascet() {
   return (
@@ -24,7 +25,9 @@ export default function Bascet() {
             <div className={styles.image}></div>
         </div>
         <div className={styles.button__content}>
+        <Link to="/">
         <Button name="Вернуться назад"></Button>
+        </Link>
         </div>
       </div>
   );

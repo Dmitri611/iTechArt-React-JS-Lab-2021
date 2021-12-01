@@ -4,6 +4,8 @@ import Logo from './logo/logo.jsx';
 import Search from './search/search.jsx';
 import Button from './button/button.jsx';
 import ButtonAuth from './buttonAuthorization/buttonAuth.jsx';
+import {Link} from "react-router-dom";
+
 
 
 export default function Header () {
@@ -14,8 +16,13 @@ export default function Header () {
           <Search></Search>
           {/* <Button name='Добавить пиццу'></Button> */}
           <div className={styles.block_buttons}>
-            <Button to="/basket" name='Корзина'></Button>
-            <Button name="Войти"></Button>
+            <Link to="/basket">
+            <Button name='Корзина' />
+            </Link>
+            <Link to="/basketUser">
+              <Button name="Корзина2" />
+            </Link>
+            <Button name="Войти" />
           </div>
         </div>
       </div>

@@ -1,14 +1,15 @@
 import React from 'react';
 import Header from '../header/header.jsx';
 import Footer from '../footer/footer.jsx';
+import styles from './index.module.scss'
 
 
-export default function Layout ({children}) {
+export default function Layout ({ children }) {
     return (
-        <>
-        <Header></Header>
-        {children}
-        <Footer></Footer>
-        </>
+        <div className={styles.wrapper}>
+            <Header></Header>
+            {children}
+            <Footer></Footer>
+        </div>
     );
 }

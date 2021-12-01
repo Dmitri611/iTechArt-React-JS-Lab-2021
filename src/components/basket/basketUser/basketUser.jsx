@@ -6,6 +6,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import CloseIcon from "@mui/icons-material/Close";
 import Button from '../../header/button/button.jsx'
+import {Link} from "react-router-dom";
 
 export default function BasketUser() {
   return (
@@ -177,8 +178,10 @@ export default function BasketUser() {
           <h2 className={styles.text}>Сумма заказа: <span className={styles.number_price}>30р.</span></h2>
         </div>
         <div className={styles.button_group}>
-          <Button name="Вернуться назад"></Button>
-          <Button name="Оплатить сейчас"></Button>
+          <Link to="/">
+          <Button name="Вернуться назад" />
+          </Link>
+          <Button name="Оплатить сейчас" />
         </div>
       </div>
     </div>
