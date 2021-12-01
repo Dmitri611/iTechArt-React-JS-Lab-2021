@@ -5,11 +5,12 @@ import Search from './search/search.jsx';
 import Button from './button/button.jsx';
 import ButtonAuth from './buttonAuthorization/buttonAuth.jsx';
 import {Link} from "react-router-dom";
+import Login from "../forms/login/login.jsx";
 
 
 
 
-export default function Header () {
+export default function Header (handleClickOpen) {
     return (
         <div className={styles.header}>
         <div className={styles.container}>
@@ -23,7 +24,7 @@ export default function Header () {
             <Link to="/basketUser">
               <Button name="Корзина2" />
             </Link>
-            <Button name="Войти" />
+            <Login />
           </div>
         </div>
       </div>

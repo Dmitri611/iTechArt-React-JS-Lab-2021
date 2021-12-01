@@ -1,46 +1,51 @@
-import React from "react";
-import styles from "./login.module.scss";
-import CloseIcon from "@mui/icons-material/Close";
-import classNames from "classnames";
-import Button from '../../header/button/button.jsx'
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import styles from '../../header/button/button.module.scss'
 
+export default function FormDialog() {
+  const [open, setOpen] = React.useState(false);
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
-export default function Login(active, setActive) {
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <div className={styles.form}>
-      <div className={styles.form__content}>
-      <div className={styles.form__top}>
-        <div className={styles.form__heading}>
-          <h2 className="header__logo_font">Вход на сайт</h2>
-        </div>
-        <div className={styles.btn_form_close}>
-          <CloseIcon className={styles.icon} fontSize="large"></CloseIcon>
-        </div>
-      </div>
-      <div className={styles.content}>
-        <p className={styles.desc}>
+    <div>
+      <Button className={styles.button} variant="outlined" onClick={handleClickOpen}>
+        Open form dialog
+      </Button>
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>Вход на сайт</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
           Подарим подарок на день рождения, сохраним адрес доставки и расскажем
           об акциях
-        </p>
-      </div>
-      <div className={styles.phone}>
-        <p className={styles.phone_p}>Введите номер телефона</p>
-        <div className={styles.phone_input}>
-          <input
-            className={classNames(
-              styles.add_photo_input_text,
-              styles.header__logo_description_font
-            )}
-            type="text"
-            size="30"
+          </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Введите телефон"
+            type="email"
+            fullWidth
+            variant="standard"
           />
-        </div>
-      </div>
-      <div className={styles.button}>
-        <Button name="Выслать код"></Button>
-      </div>
-      </div>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>отмена</Button>
+          <Button onClick={handleClose}>Получить код</Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 }
