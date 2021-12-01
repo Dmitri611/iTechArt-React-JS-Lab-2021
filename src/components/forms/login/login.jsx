@@ -4,9 +4,12 @@ import CloseIcon from "@mui/icons-material/Close";
 import classNames from "classnames";
 import Button from '../../header/button/button.jsx'
 
-export default function Login() {
+
+
+export default function Login(active, setActive) {
   return (
     <div className={styles.form}>
+      <div className={styles.form__content}>
       <div className={styles.form__top}>
         <div className={styles.form__heading}>
           <h2 className="header__logo_font">Вход на сайт</h2>
@@ -36,6 +39,7 @@ export default function Login() {
       </div>
       <div className={styles.button}>
         <Button name="Выслать код"></Button>
+      </div>
       </div>
     </div>
   );

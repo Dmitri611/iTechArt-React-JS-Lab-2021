@@ -8,13 +8,14 @@ import {Link} from "react-router-dom";
 
 
 
+
 export default function Header () {
     return (
         <div className={styles.header}>
         <div className={styles.container}>
           <Logo></Logo>
           <Search></Search>
-          {/* <Button name='Добавить пиццу'></Button> */}
+          <Button name='Добавить пиццу'></Button>
           <div className={styles.block_buttons}>
             <Link to="/basket">
             <Button name='Корзина' />

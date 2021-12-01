@@ -12,7 +12,7 @@ export default function Content () {
               <Sort></Sort>
             </div>
             <div className={styles.content__title}>
-              <h2 className={styles.content__title_h2_font}>Все пиццы</h2>
+              <h2 className={styles.content__title_h2_font}></h2>
               <PizzaBlock></PizzaBlock>
             </div>
           </div>
