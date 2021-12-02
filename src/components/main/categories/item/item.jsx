@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './item.module.scss';
 
 
-export default function Item (props) {
+export default function Item () {
     let array = ['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
     
     let category = array.map(function(item){

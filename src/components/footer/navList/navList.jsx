@@ -6,11 +6,11 @@ import Item from './item/item.jsx';
 export default function NavList () {
     return (
         <ul className={styles.footer__content__list}>
-            <Item href="aboutUs" name='О нас' />
-            <Item href="feedback" name='Оставить отзыв' />
-            <Item href="job" name='Работа у нас' />
-            <Item href="stock" name='Акции' />
-            <Item href="contacts" name='Контакты' />
+            <Item name='О нас' />
+            <Item name='Оставить отзыв' />
+            <Item name='Работа у нас' />
+            <Item name='Акции' />
+            <Item name='Контакты' />
           </ul>
     );
 }
