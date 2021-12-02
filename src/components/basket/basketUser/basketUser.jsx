@@ -1,12 +1,12 @@
-import React from "react";
-import styles from "./basketUser.module.scss";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
-import RemoveIcon from "@mui/icons-material/Remove";
-import AddIcon from "@mui/icons-material/Add";
-import CloseIcon from "@mui/icons-material/Close";
+import React from 'react'
+import styles from './basketUser.module.scss'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever'
+import RemoveIcon from '@mui/icons-material/Remove'
+import AddIcon from '@mui/icons-material/Add'
+import CloseIcon from '@mui/icons-material/Close'
 import Button from '../../header/button/button.jsx'
-import {Link} from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export default function BasketUser() {
   return (
@@ -47,28 +47,21 @@ export default function BasketUser() {
             </td>
             <td className={styles.pizza_description}>
               <h2>Новая пицца</h2>
-              <p className={styles.pizza_description_p_font}>тонкое тесто, 26 см.</p>
+              <p className={styles.pizza_description_p_font}>
+                тонкое тесто, 26 см.
+              </p>
             </td>
-          </div>          
+          </div>
           <td className={styles.counter}>
-            <RemoveIcon 
-            className={styles.icon}
-            fontSize="medium"
-            ></RemoveIcon>
+            <RemoveIcon className={styles.icon} fontSize="medium"></RemoveIcon>
             <h2>2</h2>
-            <AddIcon 
-            className={styles.icon}
-            fontSize="medium"
-            ></AddIcon>
+            <AddIcon className={styles.icon} fontSize="medium"></AddIcon>
           </td>
           <td className={styles.price}>
             <h2>10.99 р.</h2>
           </td>
           <td>
-            <CloseIcon 
-            className={styles.icon}
-            fontSize="large"
-            ></CloseIcon>
+            <CloseIcon className={styles.icon} fontSize="large"></CloseIcon>
           </td>
         </tr>
         <tr className={styles.pizza_block}>
@@ -81,28 +74,21 @@ export default function BasketUser() {
             </td>
             <td className={styles.pizza_description}>
               <h2>Новая пицца(Новая пицца1)</h2>
-              <p className={styles.pizza_description_p_font}>тонкое тесто, 26 см.</p>
+              <p className={styles.pizza_description_p_font}>
+                тонкое тесто, 26 см.
+              </p>
             </td>
-          </div>          
+          </div>
           <td className={styles.counter}>
-            <RemoveIcon 
-            className={styles.icon}
-            fontSize="medium"
-            ></RemoveIcon>
+            <RemoveIcon className={styles.icon} fontSize="medium"></RemoveIcon>
             <h2>2</h2>
-            <AddIcon 
-            className={styles.icon}
-            fontSize="medium"
-            ></AddIcon>
+            <AddIcon className={styles.icon} fontSize="medium"></AddIcon>
           </td>
           <td className={styles.price}>
             <h2>10.99 р.</h2>
           </td>
           <td>
-            <CloseIcon 
-            className={styles.icon}
-            fontSize="large"
-            ></CloseIcon>
+            <CloseIcon className={styles.icon} fontSize="large"></CloseIcon>
           </td>
         </tr>
         <tr className={styles.pizza_block}>
@@ -115,28 +101,21 @@ export default function BasketUser() {
             </td>
             <td className={styles.pizza_description}>
               <h2>Новая пицца(Новая пицца2)</h2>
-              <p className={styles.pizza_description_p_font}>тонкое тесто, 26 см.</p>
+              <p className={styles.pizza_description_p_font}>
+                тонкое тесто, 26 см.
+              </p>
             </td>
-          </div>          
+          </div>
           <td className={styles.counter}>
-            <RemoveIcon 
-            className={styles.icon}
-            fontSize="medium"
-            ></RemoveIcon>
+            <RemoveIcon className={styles.icon} fontSize="medium"></RemoveIcon>
             <h2>2</h2>
-            <AddIcon 
-            className={styles.icon}
-            fontSize="medium"
-            ></AddIcon>
+            <AddIcon className={styles.icon} fontSize="medium"></AddIcon>
           </td>
           <td className={styles.price}>
             <h2>10.99 р.</h2>
           </td>
           <td>
-            <CloseIcon 
-            className={styles.icon}
-            fontSize="large"
-            ></CloseIcon>
+            <CloseIcon className={styles.icon} fontSize="large"></CloseIcon>
           </td>
         </tr>
         <tr className={styles.pizza_block}>
@@ -149,41 +128,38 @@ export default function BasketUser() {
             </td>
             <td className={styles.pizza_description}>
               <h2>Новая пицца(Новая пицца3)</h2>
-              <p className={styles.pizza_description_p_font}>тонкое тесто, 26 см.</p>
+              <p className={styles.pizza_description_p_font}>
+                тонкое тесто, 26 см.
+              </p>
             </td>
-          </div>          
+          </div>
           <td className={styles.counter}>
-            <RemoveIcon 
-            className={styles.icon}
-            fontSize="medium"
-            ></RemoveIcon>
+            <RemoveIcon className={styles.icon} fontSize="medium"></RemoveIcon>
             <h2>2</h2>
-            <AddIcon 
-            className={styles.icon}
-            fontSize="medium"
-            ></AddIcon>
+            <AddIcon className={styles.icon} fontSize="medium"></AddIcon>
           </td>
           <td className={styles.price}>
             <h2>10.99 р.</h2>
           </td>
           <td>
-            <CloseIcon 
-            className={styles.icon}
-            fontSize="large"
-            ></CloseIcon>
+            <CloseIcon className={styles.icon} fontSize="large"></CloseIcon>
           </td>
         </tr>
         <div className={styles.info_for_order}>
-          <h2 className={styles.text}>Всего пицц: <span className={styles.number}>3шт.</span></h2>
-          <h2 className={styles.text}>Сумма заказа: <span className={styles.number_price}>30р.</span></h2>
+          <h2 className={styles.text}>
+            Всего пицц: <span className={styles.number}>3шт.</span>
+          </h2>
+          <h2 className={styles.text}>
+            Сумма заказа: <span className={styles.number_price}>30р.</span>
+          </h2>
         </div>
         <div className={styles.button_group}>
           <Link to="/">
-          <Button name="Вернуться назад" />
+            <Button name="Вернуться назад" />
           </Link>
           <Button name="Оплатить сейчас" />
         </div>
       </div>
     </div>
-  );
+  )
 }

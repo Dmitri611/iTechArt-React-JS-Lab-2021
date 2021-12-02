@@ -1,29 +1,29 @@
 .sort {
-    position: relative;
+  position: relative;
 
-    &_content {
-      display: flex;
-      align-items: center;
+  &_content {
+    display: flex;
+    align-items: center;
 
-      &_padd {
-        padding-left: 10px;
-      }
+    &_padd {
+      padding-left: 10px;
     }
+  }
 
-    &_item_b_font {
-      font-weight: bold;
+  &_item_b_font {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.015em;
+    color: #2c2c2c;
+
+    &_active {
       font-size: 14px;
       line-height: 17px;
       letter-spacing: 0.015em;
-      color: #2C2C2C;
-
-      &_active {
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.015em;
-        color: #FE5F1E;
-        user-select: none;
-        cursor: pointer;
-      }
+      color: #fe5f1e;
+      user-select: none;
+      cursor: pointer;
     }
   }
+}

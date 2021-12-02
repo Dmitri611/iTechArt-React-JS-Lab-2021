@@ -1,12 +1,12 @@
 .block_search {
-    display: flex;
-  }
-  
-  .form_search {
-    display: inline-block;
-    border-bottom: 1px solid;
+  display: flex;
+}
 
-    &_input {
-      all: unset;
-    }
+.form_search {
+  display: inline-block;
+  border-bottom: 1px solid;
+
+  &_input {
+    all: unset;
   }
+}

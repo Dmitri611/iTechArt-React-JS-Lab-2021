@@ -1,8 +1,7 @@
-
 .header {
-    border-bottom: 1px solid #f6f6f6;
-    padding: 40px 0;
-  
+  border-bottom: 1px solid #f6f6f6;
+  padding: 40px 0;
+
   &_container {
     width: 90%;
     margin: 0 auto;
@@ -10,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
   &_buttons {
     width: 420px;
     display: flex;

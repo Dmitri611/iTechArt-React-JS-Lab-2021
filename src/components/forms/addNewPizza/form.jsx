@@ -1,8 +1,8 @@
-import classNames from "classnames";
-import React from "react";
-import styles from "../addNewPizza/form.module.scss";
-import CloseIcon from "@mui/icons-material/Close";
-import Button from "../../header/button/button.jsx";
+import classNames from 'classnames'
+import React from 'react'
+import styles from '../addNewPizza/form.module.scss'
+import CloseIcon from '@mui/icons-material/Close'
+import Button from '../../header/button/button.jsx'
 
 export default function Form() {
   return (
@@ -138,5 +138,5 @@ export default function Form() {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,177 +1,175 @@
 .basket__content {
-    width: 100%;
-    height: 100%;
-    min-height: 699px;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 40px 0px 40px;
+  width: 100%;
+  height: 100%;
+  min-height: 699px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px 0px 40px;
 }
 
 .basket__heading {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .heading {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .heading_svg {
-    padding-top: 6px;
+  padding-top: 6px;
 }
 
 .heading_text {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 .heading_h2_font {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 39px;
-    color: #000000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
 }
 
 .cleaning {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  cursor: pointer;
 
-    &:hover {
-        .basket_icon {
-            color: #FE5F1E;
-        }
-        
-        .cleaning_h2_font {
-            color: #FE5F1E;
-        }
+  &:hover {
+    .basket_icon {
+      color: #fe5f1e;
     }
 
-    &:active {
-        transform: translateY(1px);
+    .cleaning_h2_font {
+      color: #fe5f1e;
     }
+  }
 
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 .cleaning_svg {
-    padding-top: 6px;
+  padding-top: 6px;
 }
 
 .cleaning_text {
-    padding-top: 14px;
+  padding-top: 14px;
 }
 
 .cleaning_h2_font {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 19px;    
-    color: #B6B6B6;    
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 19px;
+  color: #b6b6b6;
 }
 
 .content {
-    display: flex;
-    padding-top: 50px;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .pizza_block {
-    display: flex;
-    flex-direction: row;
-    border-top: 1px solid #f6f6f6;
-    align-items: center;
-    min-height: 111px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #f6f6f6;
+  align-items: center;
+  min-height: 111px;
+  justify-content: space-between;
 }
 
 .pizza {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
 }
 
 .pizza_image_div {
-    display: flex;
-    padding-top: 7px;
+  display: flex;
+  padding-top: 7px;
 }
 
 .pizza_image {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .pizza_description {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding-left: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 15px;
 }
 
 .pizza_description_p_font {
-    font-size: 18px;
-    line-height: 22px;
-    color: #8D8D8D;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8d8d8d;
 }
 
 .counter {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 8%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 8%;
 }
 
 .icon {
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-        color: #FE5F1E;
-    }
+  &:hover {
+    color: #fe5f1e;
+  }
 
-    &:active {
-        transform: translateY(1px);
-    }
-
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 .price {
-    display: flex;
+  display: flex;
 }
 
 .info_for_order {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 40px;
 }
 
 .text {
-    font-size: 22px;
-    line-height: 27px;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    color: #000000;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #000000;
 }
 
 .number {
-    font-size: 22px;
-    line-height: 27px;
-    font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: bold;
 }
 
 .number_price {
-    color: #FE5F1E;
-    font-weight: bold;
+  color: #fe5f1e;
+  font-weight: bold;
 }
 
 .button_group {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 40px;
 }

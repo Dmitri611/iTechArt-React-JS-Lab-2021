@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./sort.module.scss";
-import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
+import React from 'react'
+import styles from './sort.module.scss'
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp'
 
 export default function Sort() {
   return (
@@ -15,5 +15,5 @@ export default function Sort() {
         </div>
       </div>
     </div>
-  );
+  )
 }

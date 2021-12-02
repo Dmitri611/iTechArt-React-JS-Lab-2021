@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./pizza.module.scss";
-import classNames from "classnames";
+import React from 'react'
+import styles from './pizza.module.scss'
+import classNames from 'classnames'
 
 /* eslint-disable react/prop-types */
 export default function Pizza(props) {
@@ -13,9 +13,7 @@ export default function Pizza(props) {
         <h4 className={styles.pizza_name_font}>{props.name}</h4>
       </div>
       <div className={styles.pizza_ingredients}>
-        <p className={styles.pizza_list_item_font}>
-          {props.ingredients}
-        </p>
+        <p className={styles.pizza_list_item_font}>{props.ingredients}</p>
       </div>
       <div className={styles.pizza_content}>
         <ul className={styles.pizza_list}>
@@ -28,9 +26,7 @@ export default function Pizza(props) {
             <span className={styles.pizza_list_item_font}>тонкое</span>
           </li>
           <li className={styles.pizza_list_item}>
-            <span className={styles.pizza_list_item_font}>
-              традиционное
-            </span>
+            <span className={styles.pizza_list_item_font}>традиционное</span>
           </li>
         </ul>
         <ul className={styles.pizza_list2}>
@@ -67,5 +63,5 @@ export default function Pizza(props) {
         </div>
       </div>
     </div>
-  );
+  )
 }
