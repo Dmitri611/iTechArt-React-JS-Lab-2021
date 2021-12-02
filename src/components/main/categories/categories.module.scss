@@ -1,9 +1,8 @@
 .categories {
-    display: flex;
-  }
-  
-  .categories_list {
+  display: flex;
+
+  &_list {
     display: flex;
     flex-direction: row;
   }
-  
+}

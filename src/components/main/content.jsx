@@ -7,13 +7,13 @@ import PizzaBlock from './pizzaBlock/pizzaBlock.jsx';
 export default function Content () {
     return (
         <div className={styles.content}>
-            <div className={styles.container__top}>
-              <Categories></Categories>
-              <Sort></Sort>
+            <div className={styles.content__top}>
+              <Categories />
+              <Sort />
             </div>
             <div className={styles.content__title}>
               <h2 className={styles.content__title_h2_font}></h2>
-              <PizzaBlock></PizzaBlock>
+              <PizzaBlock />
             </div>
           </div>
     );

@@ -2,12 +2,11 @@
     width: 100%;
     border-top: 1px solid #f6f6f6;
     background-color: rgb(24, 24, 24);
-  }
-  
-  .footer__content {
-    padding: 40px 0;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-  }
-  
+
+    &__content {
+      padding: 40px 0;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+    }
+  }  

@@ -1,37 +1,31 @@
 .button {
     display: inline-block;
-    background-color: #fe5f1e;
-    color: #fff;
-    border-radius: 30px;
-    padding: 15px 30px;
-    min-width: 100px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    border: 1px solid transparent;
-    user-select: none;
+    background-color: #fe5f1e !important;
+    color: #fff !important;
+    border-radius: 30px !important;
+    padding: 15px 30px !important;
+    min-width: 100px !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !important;
+    border: 1px solid transparent !important;
+    user-select: none !important;
+    text-transform: none !important;
   
+    &_font {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
     &:hover {
-      background-color: #f24701;
+      background-color: #f24701 !important;
     }
   
     &:active {
-      background-color: #de4101;
-      transform: translateY(1px);
+      background-color: #de4101 !important;
+      transform: translateY(1px) !important;
     }
   }
-
-  .button_font {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-  }
-
-  .block_buttons_add_pizza {
-    display: flex;
-  }
-
-a {
-  text-decoration: none;
-}

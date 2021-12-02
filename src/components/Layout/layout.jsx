@@ -7,9 +7,9 @@ import styles from './index.module.scss'
 export default function Layout ({ children }) {
     return (
         <div className={styles.wrapper}>
-            <Header></Header>
+            <Header />
             {children}
-            <Footer></Footer>
+            <Footer />
         </div>
     );
 }

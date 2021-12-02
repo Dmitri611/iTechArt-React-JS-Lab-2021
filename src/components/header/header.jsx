@@ -10,14 +10,16 @@ import Login from "../forms/login/login.jsx";
 
 
 
-export default function Header (handleClickOpen) {
+export default function Header () {
     return (
         <div className={styles.header}>
-        <div className={styles.container}>
-          <Logo></Logo>
-          <Search></Search>
-          <Button name='Добавить пиццу'></Button>
-          <div className={styles.block_buttons}>
+        <div className={styles.header_container}>
+          <Link to="/">
+          <Logo />
+          </Link>
+          <Search />
+          <Button name='Добавить пиццу' />
+          <div className={styles.header_buttons}>
             <Link to="/basket">
             <Button name='Корзина' />
             </Link>

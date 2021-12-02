@@ -17,33 +17,33 @@
     &:active {
       background-color: #de4101 !important;
     }
-  }
 
-  .button_reg {
-    border-top-right-radius: 30px !important;
-    border-bottom-right-radius: 30px !important;
-    background-color: #fe5f1e !important;
-    border: 1px solid transparent !important;
-  
-    &:hover {
-      background-color: #f24701 !important;
+    &_reg {
+      border-top-right-radius: 30px !important;
+      border-bottom-right-radius: 30px !important;
+      background-color: #fe5f1e !important;
+      border: 1px solid transparent !important;
+    
+      &:hover {
+        background-color: #f24701 !important;
+      }
+    
+      &:active {
+        background-color: #de4101 !important;
+      }
     }
-  
-    &:active {
-      background-color: #de4101 !important;
+
+    &__delimiter {
+      width: 2px;
+      height: 51px;
+      background-color: #de4101;
     }
-  }
 
-  .button__delimiter {
-    width: 2px;
-    height: 51px;
-    background-color: #de4101;
+    &_font {
+      font-weight: 600 !important;
+      font-size: 16px !important;
+      line-height: 19px !important;
+      text-transform: none !important;
+    }
 
-  }
-
-  .button_font {
-    font-weight: 600 !important;
-    font-size: 16px !important;
-    line-height: 19px !important;
-    text-transform: none !important;
   }

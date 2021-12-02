@@ -1,91 +1,120 @@
 
-.pizza__block {
+.pizza {
     width: 333px;
     text-align: center;
     margin-bottom: 65px;
     box-sizing: border-box;
     padding-left: 30px;
     padding-right: 30px;
-  }
-  
-  .pizza__block_image {
-    width: 260px;
-    min-height: 306px;
-    cursor: pointer;
-    padding-bottom: 10px;
-    transition: 0.5s;
-  
-    &:hover {
-      padding-bottom: 5px;
+
+    &_image {
+      width: 260px;
+      min-height: 306px;
+      cursor: pointer;
+      padding-bottom: 10px;
+      transition: 0.5s;
+    
+      &:hover {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        transition: all 0.5s ease;
+      }
+    }
+
+    &_name {
+      min-height: 34px;
+      padding-bottom: 10px;
+
+      &_font {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #000000;
+      }
+    }
+
+    &_content {
+      display: flex;
+      background-color: #f3f3f3;
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 6px;
+      margin-top: 10px;
+    }
+
+    &_list {
+      display: flex;
+      flex: 1;
+
+      &_item {
+        padding: 8px;
+        flex: 1;
+        cursor: pointer;
+        user-select: none;
+
+        &_font {
+          font-weight: 600;
+          font-size: 14px;
+        }
+      
+        &:hover {
+          background: #ffffff;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+          border-radius: 5px;
+        }
+
+        &_active {
+          background: #ffffff;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+          border-radius: 5px;
+          cursor: auto;
+        }
+      }
+    }
+
+    &_list2 {
+      display: flex;
+      flex: 1;
       padding-top: 5px;
-      transition: all 0.5s ease;
     }
-  }
-  
-  .pizza__block_heading {
-    min-height: 34px;
-    padding-bottom: 10px;
-  }
-  
-  .pizza__block__content {
-    display: flex;
-    background-color: #f3f3f3;
-    border-radius: 10px;
-    flex-direction: column;
-    padding: 6px;
-    margin-top: 10px;
-  }
-  
-  
-  .pizza__block_list {
-    display: flex;
-    flex: 1;
-  }
-  
-  .pizza__block_list_item {
-    padding: 8px;
-    flex: 1;
-    cursor: pointer;
-    user-select: none;
-  
-    &:hover {
-      background: #ffffff;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-      border-radius: 5px;
+
+    &_bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      &_btn {
+        display: flex;
+      }
     }
-  }
-  
-  .pizza__block_list_item_active {
-    background: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-    border-radius: 5px;
-    cursor: auto;
-  }
-  
-  .pizza__block_list2 {
-    display: flex;
-    flex: 1;
-    padding-top: 5px;
-  }
-  
-  .pizza__block__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .pizza__block_price {
-    display: flex;
-    padding-bottom: 5px;
-    padding-top: 2px;
-  }
-  
-  .pizza__block__bottom_btn {
-    display: flex;
-  }
-  
-  .button__add {
+
+    &_price {
+      display: flex;
+      padding-bottom: 5px;
+      padding-top: 2px;
+
+    &_font {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.015em;
+        color: #000000;
+      }
+    }
+
+    &_ingredients {
+      display: flex;
+      background-color: #f3f3f3;
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 6px;
+    }
+  }  
+
+  .button_add {
     width: 155px;
     height: 40px;
     background: #ffffff;
@@ -99,19 +128,19 @@
       background: #eb5a1e;
     }
   
-     &:hover .button__add_plus {
+     &:hover .button_add_plus {
       background-image: url("../../../assets/img/svg/plus_white.svg");
      }
   
-    &:hover .button__add_span_font {
+    &:hover .button_add_span_font {
       color: #fff;
     }
   
-    &:hover .button__add_i {
+    &:hover .button_add_i {
       background-color: #fff;
     }
   
-    &:hover .button__add_i_font {
+    &:hover .button_add_i_font {
       color: #eb5a1e;
     }
   
@@ -119,80 +148,43 @@
       background-color: #de4101;
       transform: translateY(1px);
     }
-  }
 
-  .pizza__block__ingredients {
-    display: flex;
-    background-color: #f3f3f3;
-    border-radius: 10px;
-    flex-direction: column;
-    padding: 6px;
-  }
+    &_plus {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-image: url("../../../assets/img/svg/plus.svg");
+      background-repeat: no-repeat;
+    }
 
-  .button__add_pizza_span_font {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #EB5A1E;
-  }
-  
-  .button__add_plus {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-image: url("../../../assets/img/svg/plus.svg");
-    background-repeat: no-repeat;
-  }
-  
-  .button__add_span {
-    display: inline-block;
-    padding-left: 7px;
-  }
-  
-  .button__add_i {
-    display: inline-block;
-    border-radius: 30px;
-    background-color: #fe5f1e;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    position: relative;
-    top: 1px;
-    left: 3px;
-  }
+    &_span {
+      display: inline-block;
+      padding-left: 7px;
 
-.pizza__block_heading_font {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #000000;
-  }
+      &_font {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #EB5A1E;
+      }
+    }
 
-.pizza__block_list_item_font {
-    font-weight: 600;
-    font-size: 14px;
-  }
+    &_i {
+      display: inline-block;
+      border-radius: 30px;
+      background-color: #fe5f1e;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      position: relative;
+      top: 1px;
+      left: 3px;
 
-  .block__price_font {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
-    letter-spacing: 0.015em;
-    color: #000000;
-  }
-
-  .button__add_span_font {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #EB5A1E;
-  }
-  
-  .button__add_i_font {
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 16px;
-    color: #FFFFFF;
+      &_font {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 16px;
+        color: #FFFFFF;
+      }
+    }
   }

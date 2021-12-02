@@ -1,4 +1,26 @@
-.list_item_active {
+.item {
+  background-color: #f9f9f9;
+  padding: 13px 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  user-select: none;
+
+  &_font {
+    font-weight: bold;
+    user-select: none;
+  }
+
+  &:hover {
+    background-color: #f4f4f4;
+  }
+
+  &:active {
+    background-color: #ececec;
+  }
+
+  &_active {
     background-color: #282828;
     color: #fff;
     cursor: auto;
@@ -7,31 +29,9 @@
     margin-right: 10px;
     transition: background-color 0.1s ease-in-out;
     user-select: none;
-  
+
     :hover {
       background-color: #282828;
     }
   }
-
-.list_item_font {
-    font-weight: bold;
-    user-select: none;
-  }
-
-  .categories_list_item {
-    background-color: #f9f9f9;
-    padding: 13px 30px;
-    border-radius: 30px;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: background-color 0.1s ease-in-out;
-    user-select: none;
-  
-    &:hover {
-      background-color: #f4f4f4;
-    }
-  
-    &:active {
-      background-color: #ececec;
-    }
-  }
+}

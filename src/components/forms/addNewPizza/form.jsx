@@ -13,7 +13,7 @@ export default function Form() {
           <h2 className="header__logo_font">Добавить пиццу</h2>
         </div>
         <div className={styles.btn_form_close}>
-          <CloseIcon className={styles.icon} fontSize="large"></CloseIcon>
+          <CloseIcon className={styles.icon} fontSize="large" />
         </div>
       </div>
       <div className={styles.form__wrapper}>

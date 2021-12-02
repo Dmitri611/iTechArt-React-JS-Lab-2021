@@ -6,7 +6,7 @@ export default function Categories () {
     return (
         <div className={styles.categories}>
                 <ul className={styles.categories_list}>
-                  <Item></Item>
+                  <Item />
                 </ul>
               </div>
     );

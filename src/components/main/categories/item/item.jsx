@@ -7,8 +7,8 @@ export default function Item (props) {
     
     let category = array.map(function(item){
         return (
-            <li key={item} className={styles.categories_list_item}>
-                <span className={styles.list_item_font}>{item}</span>
+            <li key={item} className={styles.item}>
+                <span className={styles.item_font}>{item}</span>
             </li>
         );
     });

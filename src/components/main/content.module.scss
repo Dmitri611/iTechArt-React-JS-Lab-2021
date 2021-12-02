@@ -1,27 +1,26 @@
-
 .content {
-    margin: 0 auto;
-    width: 70%;
-    padding: 40px 0;
-  }
-  
-  .container__top {
+  margin: 0 auto;
+  width: 70%;
+  padding: 40px 0;
+
+  &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
-  .content__title {
+
+  &__title {
     display: flex;
     margin: 35px 0;
     flex-direction: column;
     padding-top: 20px;
-  }
 
-  .content__title_h2_font {
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 39px;
-    letter-spacing: 0.01em;
-    color: #000000;
+    &_h2_font {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: 0.01em;
+      color: #000000;
+    }
   }
+}

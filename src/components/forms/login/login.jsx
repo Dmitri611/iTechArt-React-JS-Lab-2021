@@ -22,7 +22,7 @@ export default function FormDialog() {
   return (
     <div>
       <Button className={styles.button} variant="outlined" onClick={handleClickOpen}>
-        Open form dialog
+        <span className={styles.button_font}>Вход</span>
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Вход на сайт</DialogTitle>

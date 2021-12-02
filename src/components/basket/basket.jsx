@@ -26,7 +26,7 @@ export default function Bascet() {
         </div>
         <div className={styles.button__content}>
         <Link to="/">
-        <Button name="Вернуться назад"></Button>
+        <Button name="Вернуться назад" />
         </Link>
         </div>
       </div>
