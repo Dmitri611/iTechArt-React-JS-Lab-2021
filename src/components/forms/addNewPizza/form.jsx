@@ -24,7 +24,7 @@ export default function Form() {
             </h2>
             <div className={styles.add_photo__bottom}>
               <div className={styles.add_photo__bottom_label}>
-                <label name="url" className={styles.list_item_font} for="">
+                <label name="url" className={styles.list_item_font}>
                   Вставьте URL ссылку картинки
                 </label>
               </div>
@@ -46,7 +46,7 @@ export default function Form() {
             </h2>
             <div className={styles.add_categories__bottom}>
               <div className={styles.add_categories__bottom_label}>
-                <label className={styles.list_item_font} for="">
+                <label className={styles.list_item_font} htmlFor="">
                   Введите название категории
                 </label>
               </div>
@@ -68,7 +68,7 @@ export default function Form() {
             </h2>
             <div className={styles.add_name_pizza__bottom}>
               <div className={styles.add_name_pizza__bottom_label}>
-                <label className={styles.list_item_font} for="">
+                <label className={styles.list_item_font} htmlFor="">
                   Введите название пиццы
                 </label>
               </div>
@@ -90,7 +90,7 @@ export default function Form() {
             </h2>
             <div className={styles.add_price__bottom}>
               <div className={styles.add_price__bottom_label}>
-                <label className={styles.list_item_font} for="">
+                <label className={styles.list_item_font} htmlFor="">
                   Введите цену пиццы
                 </label>
               </div>
@@ -115,7 +115,7 @@ export default function Form() {
             </h2>
             <div className={styles.ingredients__bottom}>
               <div className={styles.ingredients__bottom_label}>
-                <label className={styles.list_item_font} for="">
+                <label className={styles.list_item_font} htmlFor="">
                   Введите ингредиенты через запятую
                 </label>
               </div>
