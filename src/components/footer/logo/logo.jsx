@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './logo.module.scss'
-import logo from '../../../assets/img/svg/544pizza2_100268.svg'
+import React from "react";
+import styles from "./logo.module.scss";
+import logo from "../../../assets/img/svg/544pizza2_100268.svg";
 
 export default function Logo() {
   return (
@@ -13,5 +13,5 @@ export default function Logo() {
       />
       <h2 className={styles.footer__logo_font}>Pizza LAB</h2>
     </div>
-  )
+  );
 }

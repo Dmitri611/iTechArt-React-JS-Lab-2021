@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './search.module.scss'
+import React from "react";
+import styles from "./search.module.scss";
 
 export default function Search() {
   return (
@@ -25,5 +25,5 @@ export default function Search() {
         />
       </form>
     </div>
-  )
+  );
 }

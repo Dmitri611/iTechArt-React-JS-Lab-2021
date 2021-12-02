@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './navList.module.scss'
-import Item from './item/item.jsx'
+import React from "react";
+import styles from "./navList.module.scss";
+import Item from "./item/item.jsx";
 
 export default function NavList() {
   return (
@@ -11,5 +11,5 @@ export default function NavList() {
       <Item name="Акции" />
       <Item name="Контакты" />
     </ul>
-  )
+  );
 }

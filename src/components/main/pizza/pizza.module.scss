@@ -128,7 +128,7 @@
   }
 
   &:hover .button_add_plus {
-    background-image: url('../../../assets/img/svg/plus_white.svg');
+    background-image: url("../../../assets/img/svg/plus_white.svg");
   }
 
   &:hover .button_add_span_font {
@@ -152,7 +152,7 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    background-image: url('../../../assets/img/svg/plus.svg');
+    background-image: url("../../../assets/img/svg/plus.svg");
     background-repeat: no-repeat;
   }
 

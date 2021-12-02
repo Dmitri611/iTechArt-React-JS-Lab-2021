@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './pizzaBlock.module.scss'
-import Pizza from '../pizza/pizza.jsx'
+import React from "react";
+import styles from "./pizzaBlock.module.scss";
+import Pizza from "../pizza/pizza.jsx";
 
 export default function PizzaBlock() {
   return (
@@ -34,5 +34,5 @@ export default function PizzaBlock() {
         amount="2"
       ></Pizza>
     </div>
-  )
+  );
 }

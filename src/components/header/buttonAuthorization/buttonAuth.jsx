@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './buttonAuth.module.scss'
-import { ButtonGroup, Button } from '@mui/material'
+import React from "react";
+import styles from "./buttonAuth.module.scss";
+import { ButtonGroup, Button } from "@mui/material";
 
 export default function ButtonAuth() {
   return (
@@ -15,5 +15,5 @@ export default function ButtonAuth() {
         </Button>
       </ButtonGroup>
     </div>
-  )
+  );
 }

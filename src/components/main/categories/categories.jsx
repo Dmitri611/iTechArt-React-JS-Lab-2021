@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './categories.module.scss'
-import Item from './item/item.jsx'
+import React from "react";
+import styles from "./categories.module.scss";
+import Item from "./item/item.jsx";
 
 export default function Categories() {
   return (
@@ -9,5 +9,5 @@ export default function Categories() {
         <Item />
       </ul>
     </div>
-  )
+  );
 }

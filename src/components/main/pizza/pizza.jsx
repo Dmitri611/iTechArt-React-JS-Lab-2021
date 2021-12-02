@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './pizza.module.scss'
-import classNames from 'classnames'
+import React from "react";
+import styles from "./pizza.module.scss";
+import classNames from "classnames";
 
 /* eslint-disable react/prop-types */
 export default function Pizza(props) {
@@ -63,5 +63,5 @@ export default function Pizza(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import React from 'react'
-import styles from './footer.module.scss'
-import Logo from './logo/logo.jsx'
-import NavList from './navList/navList'
-import { Link } from 'react-router-dom'
+import React from "react";
+import styles from "./footer.module.scss";
+import Logo from "./logo/logo.jsx";
+import NavList from "./navList/navList";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -14,5 +14,5 @@ export default function Footer() {
         <NavList />
       </div>
     </div>
-  )
+  );
 }

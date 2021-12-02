@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './logo.module.scss'
-import logo from '../../../assets/img/svg/544pizza2_100268.svg'
+import React from "react";
+import styles from "./logo.module.scss";
+import logo from "../../../assets/img/svg/544pizza2_100268.svg";
 
 export default function Logo() {
   return (
@@ -17,5 +17,5 @@ export default function Logo() {
         <p className={styles.logo_description_font}>Лучшая пицца в мире!</p>
       </div>
     </div>
-  )
+  );
 }
