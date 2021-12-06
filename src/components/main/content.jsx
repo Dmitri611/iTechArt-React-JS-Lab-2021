@@ -4,7 +4,8 @@ import Sort from "./sort/sort.jsx";
 import styles from "./content.module.scss";
 import PizzaBlock from "./pizzaBlock/pizzaBlock.jsx";
 
-export default function Content() {
+/* eslint-disable react/prop-types */
+export default function Content({pizzas}) {
   return (
     <div className={styles.content}>
       <div className={styles.content__top}>
@@ -12,8 +13,8 @@ export default function Content() {
         <Sort />
       </div>
       <div className={styles.content__title}>
-        <h2 className={styles.content__title_h2_font}></h2>
-        <PizzaBlock />
+        <h2 className={styles.content__title_h2_font}>Все пиццы</h2>
+        <PizzaBlock pizzas={pizzas} />
       </div>
     </div>
   );

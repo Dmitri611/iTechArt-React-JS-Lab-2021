@@ -3,17 +3,17 @@ import styles from "./pizza.module.scss";
 import classNames from "classnames";
 
 /* eslint-disable react/prop-types */
-export default function Pizza(props) {
+export default function Pizza({image, name, ingredients, price, amount}) {
   return (
     <div className={styles.pizza}>
       <div className={styles.pizza_image}>
-        <img src={props.image} alt="Pizza" />
+        <img src={image} alt="Pizza" />
       </div>
       <div className={styles.pizza_name}>
-        <h4 className={styles.pizza_name_font}>{props.name}</h4>
+        <h4 className={styles.pizza_name_font}>{name}</h4>
       </div>
       <div className={styles.pizza_ingredients}>
-        <p className={styles.pizza_list_item_font}>{props.ingredients}</p>
+        <p className={styles.pizza_list_item_font}>{ingredients}</p>
       </div>
       <div className={styles.pizza_content}>
         <ul className={styles.pizza_list}>
@@ -48,7 +48,7 @@ export default function Pizza(props) {
       </div>
       <div className={styles.pizza_bottom}>
         <div className={styles.pizza_price}>
-          <span className={styles.pizza_price_font}> от {props.price}р </span>
+          <span className={styles.pizza_price_font}> от {price}р </span>
         </div>
         <div className={styles.pizza_bottom_btn}>
           <div className={styles.button_add}>
@@ -57,7 +57,7 @@ export default function Pizza(props) {
               <span className={styles.button_add_span_font}>Добавить</span>
             </div>
             <div className={styles.button_add_i}>
-              <i className={styles.button_add_i_font}>{props.amount}</i>
+              <i className={styles.button_add_i_font}>{amount}</i>
             </div>
           </div>
         </div>

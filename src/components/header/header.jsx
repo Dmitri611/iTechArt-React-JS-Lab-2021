@@ -4,7 +4,6 @@ import Logo from "./logo/logo.jsx";
 import Search from "./search/search.jsx";
 import Button from "./button/button.jsx";
 import { Link } from "react-router-dom";
-import Login from "../forms/login/login.jsx";
 
 export default function Header() {
   return (
@@ -14,15 +13,19 @@ export default function Header() {
           <Logo />
         </Link>
         <Search />
-        <Button name="Добавить пиццу" />
+        <Link to="/newPizza">
+          <Button name="Добавить пиццу" />
+        </Link>
+        <Link to="/basket">
+          <Button name="Корзина" />
+        </Link>
         <div className={styles.header_buttons}>
-          <Link to="/basket">
-            <Button name="Корзина" />
+          <Link to="/login">
+            <Button name="Войти" />
           </Link>
-          <Link to="/basketUser">
-            <Button name="Корзина2" />
+          <Link to="/registration">
+            <Button name="Регистрация" />
           </Link>
-          <Login />
         </div>
       </div>
     </div>

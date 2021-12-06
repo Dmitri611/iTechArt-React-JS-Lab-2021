@@ -1,24 +1,22 @@
 {
-    "env": {
-      "browser": true,
-      "es6": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 8,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true,
-        "modules": true
-      }
-    },
-    "plugins": ["prettier", "react"],
-    "extends": ["prettier", "eslint:recommended", "plugin:react/recommended"],
-    "rules": {
-      
-    },
-    "settings": {
-      "react": {
-        "version": "detetect"
-      }
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "plugins": ["prettier", "react"],
+  "extends": ["prettier", "eslint:recommended", "plugin:react/recommended"],
+  "rules": {},
+  "settings": {
+    "react": {
+      "version": "detetect"
     }
   }
+}

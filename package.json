@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint \"{,!(node_modules)/**/}*.{js,jsx,scss}\"",
+    "lint": "eslint \"{,!(node_modules)/**/}*.{js,jsx}\"",
     "prettier": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,scss}\""
   },
   "eslintConfig": {
