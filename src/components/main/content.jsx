@@ -3,9 +3,13 @@ import Categories from "./categories/categories.jsx";
 import Sort from "./sort/sort.jsx";
 import styles from "./content.module.scss";
 import PizzaBlock from "./pizzaBlock/pizzaBlock.jsx";
+import PropTypes from 'prop-types';
 
-/* eslint-disable react/prop-types */
-export default function Content({pizzas}) {
+Content.propTypes ={
+  pizzas: PropTypes.array,
+}
+
+export default function Content({ pizzas }) {
   return (
     <div className={styles.content}>
       <div className={styles.content__top}>

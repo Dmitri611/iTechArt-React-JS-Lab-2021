@@ -1,0 +1,36 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  cursor: pointer;
+
+  &:hover {
+    .basket_icon {
+      color: #fe5f1e;
+    }
+
+    .content_font {
+      color: #fe5f1e;
+    }
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &_svg {
+    padding-top: 6px;
+  }
+
+  &_text {
+    padding-top: 14px;
+  }
+
+  &_font {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 19px;
+    color: #b6b6b6;
+  }
+}

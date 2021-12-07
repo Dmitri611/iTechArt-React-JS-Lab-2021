@@ -1,9 +1,18 @@
 import React from "react";
 import styles from "./pizza.module.scss";
 import classNames from "classnames";
+import PropTypes from 'prop-types';
 
-/* eslint-disable react/prop-types */
-export default function Pizza({image, name, ingredients, price, amount}) {
+Pizza.propTypes ={
+  image: PropTypes.string,
+  name: PropTypes.string,
+  ingredients: PropTypes.string,
+  price: PropTypes.number,
+  amount: PropTypes.number
+}
+
+
+export default function Pizza({ image, name, ingredients, price, amount }) {
   return (
     <div className={styles.pizza}>
       <div className={styles.pizza_image}>

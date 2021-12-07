@@ -1,0 +1,28 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 20px;
+
+  &_heading {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    &_svg {
+      padding-top: 6px;
+    }
+
+    &_text {
+      padding-left: 5px;
+    }
+
+    &_font {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+      color: #000000;
+    }
+  }
+}
