@@ -2,11 +2,11 @@ import React from "react";
 import Header from "../header/header.jsx";
 import Footer from "../footer/footer.jsx";
 import styles from "./index.module.scss";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 Layout.propTypes = {
-  children: PropTypes.element
-}
+  children: PropTypes.element,
+};
 
 export default function Layout({ children }) {
   return (
@@ -15,5 +15,5 @@ export default function Layout({ children }) {
       {children}
       <Footer />
     </div>
-  ); 
+  );
 }

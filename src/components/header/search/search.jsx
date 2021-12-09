@@ -11,7 +11,7 @@ export default function Search() {
         color="warning"
         InputProps={{
           endAdornment: (
-            <InputAdornment>
+            <InputAdornment position="start">
               <IconButton>
                 <SearchIcon />
               </IconButton>

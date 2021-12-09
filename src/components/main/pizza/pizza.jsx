@@ -1,16 +1,15 @@
 import React from "react";
 import styles from "./pizza.module.scss";
 import classNames from "classnames";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-Pizza.propTypes ={
+Pizza.propTypes = {
   image: PropTypes.string,
   name: PropTypes.string,
   ingredients: PropTypes.string,
   price: PropTypes.number,
-  amount: PropTypes.number
-}
-
+  amount: PropTypes.number,
+};
 
 export default function Pizza({ image, name, ingredients, price, amount }) {
   return (
