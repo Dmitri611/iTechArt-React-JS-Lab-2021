@@ -1,0 +1,24 @@
+.pizzas {
+  padding-top: 80px;
+
+  &_select {
+    min-width: 30%;
+    width: 300px;
+    height: 140px;
+    color: #7b7b7b;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+
+    option:hover {
+      background-color: #fe5f1e;
+      color: white;
+    }
+
+    option:checked {
+      background: #fe5f1e -webkit-linear-gradient(bottom, #fe5f1e 0%, #fe5f1e
+            100%);
+      color: white;
+    }
+  }
+}

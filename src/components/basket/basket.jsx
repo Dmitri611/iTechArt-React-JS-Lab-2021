@@ -10,10 +10,7 @@ export default function Basket() {
       <div className={styles.heading__content}>
         <h2 className={styles.heading_font}>Корзина пустая</h2>
         <div className={styles.icon}>
-          <SentimentDissatisfiedIcon
-            fontSize="large"
-            color="success"
-          />
+          <SentimentDissatisfiedIcon fontSize="large" color="success" />
         </div>
       </div>
       <div className={styles.description}>

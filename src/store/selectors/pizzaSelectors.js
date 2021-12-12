@@ -1,3 +1,3 @@
-export const pizzaSelectors = () => {
+export const pizzaSelector = () => {
   return (state) => state.pizzas;
 };

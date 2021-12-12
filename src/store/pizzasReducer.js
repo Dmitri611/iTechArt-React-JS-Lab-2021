@@ -2,35 +2,38 @@ const pizzasState = {
   pizzas: [
     {
       image:
-        "https://dodopizza-a.akamaihd.net/static/Img/Products/c54928acb21147578a4d8a704cadea11_292x292.jpeg",
-      name: "Новая пицца1",
-      ingredients: "Тесто, Мясо, Соус, Сыр",
-      price: 10.99,
-      amount: 2,
+        "https://dodopizza-a.akamaihd.net/static/Img/Products/a5d272351fe241b1a90b3e10d2b5e2d0_292x292.jpeg",
+      name: "Четыре сезона",
+      ingredients:
+        "Итальянские травы, томатный соус, томаты, пикантная пепперони, кубики брынзы, моцарелла, ветчина, шампиньоны",
+      price: 15.4,
+      amount: 0,
     },
     {
       image:
-        "https://dodopizza-a.akamaihd.net/static/Img/Products/c54928acb21147578a4d8a704cadea11_292x292.jpeg",
-      name: "Новая пицца2",
-      ingredients: "Тесто, Мясо, Соус, Сыр",
-      price: 10.99,
-      amount: 2,
+        "https://dodopizza-a.akamaihd.net/static/Img/Products/c51171b097ee4bcf8b8e3bed32014ea2_292x292.jpeg",
+      name: "Карбонара",
+      ingredients:
+        "Бекон, сыры чеддер и пармезан, моцарелла, томаты, соус альфредо, красный лук, чеснок, итальянские травы",
+      price: 15.4,
+      amount: 0,
     },
     {
       image:
-        "https://dodopizza-a.akamaihd.net/static/Img/Products/c54928acb21147578a4d8a704cadea11_292x292.jpeg",
-      name: "Новая пицца3",
-      ingredients: "Тесто, Мясо, Соус, Сыр",
-      price: 10.99,
-      amount: 2,
+        "https://dodopizza-a.akamaihd.net/static/Img/Products/efebb8f86a87431ca2c0137103fb5d27_292x292.jpeg",
+      name: "Пепперони",
+      ingredients: "Томатный соус, пикантная пепперони, моцарелла",
+      price: 11.4,
+      amount: 0,
     },
     {
       image:
-        "https://dodopizza-a.akamaihd.net/static/Img/Products/c54928acb21147578a4d8a704cadea11_292x292.jpeg",
-      name: "Новая пицца4",
-      ingredients: "Тесто, Мясо, Соус, Сыр",
-      price: 10.99,
-      amount: 2,
+        "https://dodopizza-a.akamaihd.net/static/Img/Products/52d4303272ef4b97b286d6f2d09a4979_292x292.jpeg",
+      name: "Сырный цыпленок",
+      ingredients:
+        "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок",
+      price: 18.4,
+      amount: 0,
     },
   ],
 };
@@ -41,6 +44,11 @@ export const pizzasReducer = (state = pizzasState, action) => {
       return {
         ...state,
         pizzas: [...state.pizzas, action.newItem],
+      };
+    case "DELETE_PIZZA":
+      return {
+        ...state,
+        pizzas: state.pizzas.filter((pizza) => pizza.name !== action.delPizza),
       };
     default:
       return state;

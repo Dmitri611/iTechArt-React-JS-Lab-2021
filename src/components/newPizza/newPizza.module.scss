@@ -1,27 +1,30 @@
 .content {
-  width: 70%;
+  width: 85%;
   height: 100%;
   min-height: 699px;
   background: white;
   margin: 0 auto;
-  align-items: center;
   padding-top: 25px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: row;
   text-align: center;
 
   &_wrapper {
-    width: 70%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
     padding: 10px 40px 10px 40px;
   }
 
   &_btns {
-    width: 40%;
+    width: 77%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
     padding-top: 20px;
+    padding-left: 190px;
   }
 
   &_font {
