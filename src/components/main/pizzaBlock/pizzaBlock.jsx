@@ -2,9 +2,10 @@ import React from "react";
 import styles from "./pizzaBlock.module.scss";
 import Pizza from "../pizza/pizza.jsx";
 import { useSelector } from "react-redux";
+import { pizzaSelectors } from "../../../store/selectors/pizzaSelectors";
 
 export default function PizzaBlock() {
-  let pizzas = useSelector((state) => state.pizzas);
+  let pizzas = useSelector(pizzaSelectors());
 
   return (
     <div className={styles.content__items}>

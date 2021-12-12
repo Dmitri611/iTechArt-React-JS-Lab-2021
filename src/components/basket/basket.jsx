@@ -4,7 +4,7 @@ import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied
 import Button from "../header/button/button.jsx";
 import { Link } from "react-router-dom";
 
-export default function Bascet() {
+export default function Basket() {
   return (
     <div className={styles.basket__content}>
       <div className={styles.heading__content}>
@@ -13,7 +13,7 @@ export default function Bascet() {
           <SentimentDissatisfiedIcon
             fontSize="large"
             color="success"
-          ></SentimentDissatisfiedIcon>
+          />
         </div>
       </div>
       <div className={styles.description}>

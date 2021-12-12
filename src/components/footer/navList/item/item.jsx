@@ -4,10 +4,8 @@ import styles from "./item.module.scss";
 /* eslint-disable react/prop-types */
 export default function Item(props) {
   return (
-    <li>
-      <a className={styles.footer_cont_l_item} href="/">
+    <li className={styles.footer_cont_l_item}>
         {props.name}
-      </a>
     </li>
   );
 }

@@ -16,13 +16,14 @@ export default function Block(props) {
       <h2 className={styles.block_font}>{props.name}</h2>
       <Tooltip placement="top-start" title="Обязательное поле">
         <TextField
-          id={props.name}
+          name={props.name}
           label={props.label}
           variant="filled"
           size="Normal"
           color="warning"
           value={props.value}
           onChange={props.onChange}
+          required
         />
       </Tooltip>
     </div>
