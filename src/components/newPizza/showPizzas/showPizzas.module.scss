@@ -9,6 +9,7 @@
     font-size: 25px;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 
     option:hover {
       background-color: #fe5f1e;
@@ -20,5 +21,11 @@
             100%);
       color: white;
     }
+  }
+
+  &_btns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
   }
 }

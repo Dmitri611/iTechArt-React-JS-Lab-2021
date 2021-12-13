@@ -13,9 +13,9 @@ export default function useNewPizza() {
   const [newPizza, setNewPizza] = useState({
     image: "",
     name: "",
-    price: "",
+    price: 0,
     ingredients: "",
-    amount: 2,
+    amount: 0,
   });
 
   const handleChange = (e) => {
