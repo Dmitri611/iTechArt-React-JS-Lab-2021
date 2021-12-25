@@ -13,8 +13,8 @@ export default function Header() {
           <Logo />
         </Link>
         <Search />
-        <Link to="/newPizza">
-          <Button name="Добавить пиццу" />
+        <Link to="/adminPage">
+          <Button name="Admin settings" />
         </Link>
         <Link to="/basket">
           <Button name="Корзина" />

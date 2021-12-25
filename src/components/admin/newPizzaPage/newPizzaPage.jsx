@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import styles from "./newPizza.module.scss";
-import Block from "./block/block.jsx";
-import Button from "../header/button/button.jsx";
+import styles from "./newPizzaPage.module.scss";
+import Button from "../../header/button/button";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addPizzaAction } from "../../store/actions/pizzaActions";
-import ShowPizzas from "./showPizzas/showPizzas";
+import { addPizzaAction } from "../../../store/actions/pizzaActions";
+import Block from "./block/block";
+import AllPizzas from "./allPizzas/allPizzas";
 
 export default function useNewPizza() {
   const dispatch = useDispatch();
 
   const [newPizza, setNewPizza] = useState({
-    image: "",
     name: "",
-    price: 0,
+    image: "",
+    price: "",
     ingredients: "",
     amount: 0,
   });
@@ -31,7 +31,7 @@ export default function useNewPizza() {
 
   return (
     <div className={styles.content}>
-      <ShowPizzas />
+      <AllPizzas />
       <div className={styles.content_wrapper}>
         <h2 className={styles.content_font}>Добавить пиццу</h2>
         <Block
@@ -60,7 +60,7 @@ export default function useNewPizza() {
           label="Введите ингредиенты"
         />
         <div className={styles.content_btns}>
-          <Link to="/">
+          <Link to="/adminPage">
             <Button name="Вернуться назад" />
           </Link>
           <Button onClick={addPizza} name="Добавить пиццу" />

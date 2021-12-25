@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "../login/login.module.scss";
-import Block from "../../newPizza/block/block.jsx";
 import { Link } from "react-router-dom";
 import Button from "../../header/button/button.jsx";
+import Block from "../../admin/newPizzaPage/block/block";
 
 export default function Registration() {
   return (

@@ -1,0 +1,16 @@
+.block {
+  width: 25%;
+  height: 100px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+
+  &_btns {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 350px;
+  }
+}

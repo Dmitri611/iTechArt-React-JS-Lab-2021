@@ -1,0 +1,34 @@
+.content {
+  min-height: 699px;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+
+  &_font {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #181818;
+    user-select: none;
+  }
+
+  &_wrapper {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  &_btn {
+    padding-top: 30px;
+  }
+}

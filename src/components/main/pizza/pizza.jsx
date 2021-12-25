@@ -7,7 +7,7 @@ Pizza.propTypes = {
   image: PropTypes.string,
   name: PropTypes.string,
   ingredients: PropTypes.string,
-  price: PropTypes.number,
+  price: PropTypes.string,
   amount: PropTypes.number,
 };
 

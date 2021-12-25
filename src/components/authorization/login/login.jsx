@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./login.module.scss";
-import Block from "../../newPizza/block/block.jsx";
+
 import Button from "../../header/button/button.jsx";
 import { Link } from "react-router-dom";
+import Block from "../../admin/newPizzaPage/block/block";
 
 export default function Login() {
   return (
