@@ -7,7 +7,7 @@ import { addPizzaAction } from "../../../store/actions/pizzaActions";
 import Block from "./block/block";
 import AllPizzas from "./allPizzas/allPizzas";
 
-export default function useNewPizza() {
+export default function NewPizza() {
   const dispatch = useDispatch();
 
   const [newPizza, setNewPizza] = useState({
