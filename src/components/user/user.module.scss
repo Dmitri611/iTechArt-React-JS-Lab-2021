@@ -1,0 +1,24 @@
+.content {
+  display: flex;
+  min-height: 699px;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 30px;
+
+  &_blocks {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    padding: 10px 40px 10px 40px;
+  }
+
+  &_btns {
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}

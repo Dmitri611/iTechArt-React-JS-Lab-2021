@@ -41,11 +41,7 @@ export default function NewPizza() {
           label="URL ссылка"
           help="Введите URL ссылку на картинку!"
         />
-        <Block 
-          name="category" 
-          label="категория" 
-          help="Введите категорию!"
-          />
+        <Block name="category" label="категория" help="Введите категорию!" />
         <Block
           value={newPizza.name}
           onChange={handleChange}

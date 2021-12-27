@@ -19,8 +19,7 @@ export default function Registration() {
   });
 
   const handleChange = (e) => {
-    setNewUser(
-      {
+    setNewUser({
       ...newUser,
       [e.target.name]: e.target.value,
     });
@@ -28,7 +27,7 @@ export default function Registration() {
 
   const addUser = () => {
     dispatch(addUserAction(newUser));
-    alert("Регистрация прошла успешна!")
+    alert("Регистрация прошла успешна!");
   };
   console.log(users);
 
@@ -51,12 +50,12 @@ export default function Registration() {
           type="password"
           help="Длина пароля минимум 8 символов, в нем должны ис - пользоваться только латинские буквы и как минимум 1 цифра!"
         />
-        <Block 
-          name="password" 
+        <Block
+          name="password"
           label="repeat password"
           type="password"
           help="Повторите пароль еще раз!"
-          />
+        />
         <Block
           value={newUser.email}
           onChange={handleChange}

@@ -10,7 +10,7 @@ Block.propTypes = {
   onChange: PropTypes.func,
   title: PropTypes.string,
   help: PropTypes.string,
-  type: PropTypes.string
+  type: PropTypes.string,
 };
 
 export default function Block(props) {

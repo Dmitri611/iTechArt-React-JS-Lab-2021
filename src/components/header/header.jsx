@@ -4,6 +4,7 @@ import Logo from "./logo/logo.jsx";
 import Search from "./search/search.jsx";
 import Button from "./button/button.jsx";
 import { Link } from "react-router-dom";
+import Profile from "./profile/profile";
 
 export default function Header() {
   return (
@@ -25,6 +26,9 @@ export default function Header() {
           </Link>
           <Link to="/registration">
             <Button name="Регистрация" />
+          </Link>
+          <Link to="/profile">
+            <Profile />
           </Link>
         </div>
       </div>

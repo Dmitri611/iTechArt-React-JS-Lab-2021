@@ -9,6 +9,7 @@ import AdminPage from "./components/admin/adminPage/adminPage.jsx";
 import NewPizzaPage from "./components/admin/newPizzaPage/newPizzaPage";
 import RemovePizzaPage from "./components/admin/removePizza/removePizzaPage";
 import EditPizzaPage from "./components/admin/editPizzaPage/editPizzaPage.jsx";
+import User from "./components/user/user.jsx";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route exact path="/adminPage/editPizza" element={<EditPizzaPage />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/registration" element={<Registration />} />
+        <Route exact path="/profile" element={<User />} />
       </Routes>
     </Layout>
   );
