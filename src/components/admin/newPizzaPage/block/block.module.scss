@@ -5,12 +5,22 @@
   flex-direction: column;
   margin: 0 auto;
   justify-content: space-between;
-  height: 120px;
+  height: 140px;
 
   &_font {
     font-size: 16px;
     line-height: 19px;
     color: #7b7b7b;
     user-select: none;
+    text-align: center;
+
+    &_p {
+      text-align: start;
+      font-size: 13px;
+      line-height: 15px;
+      color: #7b7b7b;
+      user-select: none;
+      font-style: italic;
+    }
   }
 }

@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
 
   &_font {
     font-weight: 800;
@@ -26,6 +25,6 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 }

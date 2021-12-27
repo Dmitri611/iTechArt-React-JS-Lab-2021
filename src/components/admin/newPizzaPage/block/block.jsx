@@ -8,6 +8,9 @@ Block.propTypes = {
   label: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  title: PropTypes.string,
+  help: PropTypes.string,
+  type: PropTypes.string
 };
 
 export default function Block(props) {
@@ -23,9 +26,10 @@ export default function Block(props) {
           color="warning"
           value={props.value}
           onChange={props.onChange}
-          required
+          type={props.type}
         />
       </Tooltip>
+      <p className={styles.block_font_p}>{props.help}</p>
     </div>
   );
 }

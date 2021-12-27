@@ -15,6 +15,13 @@ export const usersReducer = (state = usersState, action) => {
         ...state,
         users: [action.newUser, ...state.users],
       };
+    case "AUTH":
+      return {
+        ...state,
+        users: state.users.filter(
+          (user) => user.login === action.thisUserLogin
+        ),
+      };
     default:
       return state;
   }

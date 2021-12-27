@@ -38,26 +38,34 @@ export default function NewPizza() {
           value={newPizza.image}
           onChange={handleChange}
           name="image"
-          label="Введите URL ссылку на картинку"
+          label="URL ссылка"
+          help="Введите URL ссылку на картинку!"
         />
-        <Block name="category" label="Введите категорию" />
+        <Block 
+          name="category" 
+          label="категория" 
+          help="Введите категорию!"
+          />
         <Block
           value={newPizza.name}
           onChange={handleChange}
           name="name"
-          label="Введите название"
+          label="Название пиццы"
+          help="Введите название пиццы!"
         />
         <Block
           value={newPizza.price}
           onChange={handleChange}
           name="price"
-          label="Введите цену"
+          label="Цена"
+          help="Введите цену пиццы!"
         />
         <Block
           value={newPizza.ingredients}
           onChange={handleChange}
           name="ingredients"
-          label="Введите ингредиенты"
+          label="Ингредиенты"
+          help="Введите ингредиенты для пиццы!"
         />
         <div className={styles.content_btns}>
           <Link to="/adminPage">
