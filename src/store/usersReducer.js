@@ -5,6 +5,11 @@ const usersState = {
       password: "admin",
       email: "admin",
     },
+    {
+      login: "dima",
+      password: "dima",
+      email: "dima",
+    },
   ],
 };
 
@@ -14,13 +19,6 @@ export const usersReducer = (state = usersState, action) => {
       return {
         ...state,
         users: [action.newUser, ...state.users],
-      };
-    case "AUTH":
-      return {
-        ...state,
-        users: state.users.filter(
-          (user) => user.login === action.thisUserLogin
-        ),
       };
     default:
       return state;

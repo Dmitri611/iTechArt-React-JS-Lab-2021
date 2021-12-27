@@ -4,13 +4,10 @@ import styles from "./login.module.scss";
 import Button from "../../header/button/button.jsx";
 import { Link } from "react-router-dom";
 import Block from "../../admin/newPizzaPage/block/block";
-import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { userSelector } from "../../../store/selectors/usersSelectors";
-import { thisUserAction } from "../../../store/actions/userActions";
 
 export default function Login() {
-  const dispatch = useDispatch();
   const users = useSelector(userSelector());
   const [user, setUser] = useState({
     login: "",
@@ -25,11 +22,19 @@ export default function Login() {
   };
 
   const findUser = () => {
-    dispatch(thisUserAction(user.login));
-    if (user.login === users[0].login && user.password === users[0].password) {
-      alert(`Пользователь ${user.login} успешно авторизован!`);
+    const thisUser = users.find(item => item.login === user.login);
+    if(!thisUser){
+      alert("Пользователя не существует!");
     } else {
-      alert("Пользователь не найден!");
+      if (user.login === thisUser.login) {
+        if(user.password === thisUser.password){
+          alert(`Пользователь ${user.login} успешно авторизован!`); 
+        } else {
+          alert("Неверный пароль!");
+        }
+      } else {
+        alert("Пользователь не найден!");
+      }
     }
   };
 
