@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import styles from "./allPizzas.module.scss";
 import { useSelector } from "react-redux";
 import { pizzaSelector } from "../../../../store/selectors/pizzaSelectors";
 
-export default function AllPizzas() {
-  let pizzas = useSelector(pizzaSelector());
+export default function AllPizzas(props) {
+  let pizzas = useSelector(pizzaSelector);
 
   return (
     <div className={styles.pizzas}>
@@ -14,7 +15,9 @@ export default function AllPizzas() {
       {pizzas.length > 0 ? (
         <select size="3" className={styles.pizzas_select}>
           {pizzas.map((pizza) => (
-            <option key={pizza.name}>{pizza.name}</option>
+            <option onClick={props.onClick} key={pizza.name}>
+              {pizza.name}
+            </option>
           ))}
         </select>
       ) : (

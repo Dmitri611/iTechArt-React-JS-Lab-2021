@@ -7,7 +7,7 @@ import { delPizzaAction } from "../../../store/actions/pizzaActions";
 import { Link } from "react-router-dom";
 
 export default function ShowPizzas() {
-  let pizzas = useSelector(pizzaSelector());
+  let pizzas = useSelector(pizzaSelector);
   const dispatch = useDispatch();
 
   let PizzaValue = {

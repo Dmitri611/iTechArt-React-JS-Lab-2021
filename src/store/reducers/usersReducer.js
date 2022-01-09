@@ -1,3 +1,5 @@
+import { ADD_USER } from "../constants/constants";
+
 const usersState = {
   users: [
     {
@@ -15,7 +17,7 @@ const usersState = {
 
 export const usersReducer = (state = usersState, action) => {
   switch (action.type) {
-    case "ADD_USER":
+    case ADD_USER:
       return {
         ...state,
         users: [action.newUser, ...state.users],

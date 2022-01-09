@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { pizzaSelector } from "../../../store/selectors/pizzaSelectors";
 
 export default function PizzaBlock() {
-  let pizzas = useSelector(pizzaSelector());
+  let pizzas = useSelector(pizzaSelector);
 
   return (
     <div className={styles.content__items}>

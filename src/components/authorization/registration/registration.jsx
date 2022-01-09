@@ -10,7 +10,7 @@ import { userSelector } from "../../../store/selectors/usersSelectors";
 
 export default function Registration() {
   const dispatch = useDispatch();
-  const users = useSelector(userSelector());
+  const users = useSelector(userSelector);
 
   const [newUser, setNewUser] = useState({
     login: "",
@@ -68,9 +68,7 @@ export default function Registration() {
         <Link to="/">
           <Button name="Вернуться назад" />
         </Link>
-        <Link to="/">
-          <Button onClick={addUser} name="Регистрация" />
-        </Link>
+        <Button onClick={addUser} name="Регистрация" />
       </div>
     </div>
   );

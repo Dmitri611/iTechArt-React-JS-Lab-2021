@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import styles from "./block.module.scss";
 import { TextField, Tooltip } from "@mui/material";
@@ -27,6 +28,7 @@ export default function Block(props) {
           value={props.value}
           onChange={props.onChange}
           type={props.type}
+          defaultValue={props.defaultValue}
         />
       </Tooltip>
       <p className={styles.block_font_p}>{props.help}</p>

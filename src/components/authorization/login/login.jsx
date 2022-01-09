@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { userSelector } from "../../../store/selectors/usersSelectors";
 
 export default function Login() {
-  const users = useSelector(userSelector());
+  const users = useSelector(userSelector);
   const [user, setUser] = useState({
     login: "",
     password: "",
@@ -62,9 +62,7 @@ export default function Login() {
         <Link to="/">
           <Button name="Вернуться назад" />
         </Link>
-        <Link to="/">
-          <Button onClick={findUser} name="Войти" />
-        </Link>
+        <Button onClick={findUser} name="Войти" />
       </div>
     </div>
   );
