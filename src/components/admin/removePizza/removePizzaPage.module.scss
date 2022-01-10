@@ -6,35 +6,6 @@
   align-items: center;
   min-height: 699px;
 
-  &_heading {
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 60px;
-  }
-
-  &_select {
-    min-width: 20%;
-    margin: 0 auto;
-    width: 300px;
-    height: 140px;
-    color: #7b7b7b;
-    font-size: 25px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-
-    option:hover {
-      background-color: #fe5f1e;
-      color: white;
-    }
-
-    option:checked {
-      background: #fe5f1e -webkit-linear-gradient(bottom, #fe5f1e 0%, #fe5f1e
-            100%);
-      color: white;
-    }
-  }
-
   &_btns {
     width: 25%;
     padding-top: 70px;

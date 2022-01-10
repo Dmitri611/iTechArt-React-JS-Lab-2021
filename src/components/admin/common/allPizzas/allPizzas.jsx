@@ -10,7 +10,7 @@ export default function AllPizzas(props) {
   return (
     <div className={styles.pizzas}>
       <div className={styles.pizzas_heading}>
-        <h2>Все пиццы</h2>
+        <h2>{props.heading}</h2>
       </div>
       {pizzas.length > 0 ? (
         <select size="3" className={styles.pizzas_select}>

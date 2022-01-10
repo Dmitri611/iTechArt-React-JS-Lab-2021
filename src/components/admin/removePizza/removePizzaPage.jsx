@@ -1,27 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./removePizzaPage.module.scss";
-import { useSelector, useDispatch } from "react-redux";
-import { pizzaSelector } from "../../../store/selectors/pizzaSelectors";
+import { useDispatch } from "react-redux";
 import Button from "../../header/button/button";
 import { delPizzaAction } from "../../../store/actions/pizzaActions";
 import { Link } from "react-router-dom";
+import AllPizzas from "../common/allPizzas/allPizzas";
 
 export default function ShowPizzas() {
-  let pizzas = useSelector(pizzaSelector);
   const dispatch = useDispatch();
-
-  let PizzaValue = {
+  const [pizzaValue, setPizzaValue] = useState({
     value: "",
-  };
+  })
 
-  const handleChange = (e) => {
-    PizzaValue.value = e.currentTarget.value;
+
+  const thisPizza = (e) => {
+    setPizzaValue({
+      value: e.currentTarget.value
+    })
+    console.log(e.currentTarget.value);
   };
 
   const delPizza = () => {
-    dispatch(delPizzaAction(PizzaValue.value));
-    if (PizzaValue.value) {
-      alert(`Пицца ${PizzaValue.value} успешно удалена!`);
+    if (pizzaValue.value) {
+      alert(`Пицца ${pizzaValue.value} успешно удалена!`);
+      dispatch(delPizzaAction(pizzaValue.value));
     } else {
       alert("Пицца не выбрана!");
     }
@@ -29,22 +31,7 @@ export default function ShowPizzas() {
 
   return (
     <div className={styles.pizzas}>
-      <div className={styles.pizzas_heading}>
-        <h2>Выберите пиццу, которую хотите удалить</h2>
-      </div>
-      {pizzas.length > 0 ? (
-        <select
-          onChange={handleChange}
-          size="3"
-          className={styles.pizzas_select}
-        >
-          {pizzas.map((pizza) => (
-            <option key={pizza.name}>{pizza.name}</option>
-          ))}
-        </select>
-      ) : (
-        <h2>Пиццы отсутствуют!</h2>
-      )}
+    <AllPizzas onClick={thisPizza} heading="Выберите пицц, которую хотите удалить" />
       <div className={styles.pizzas_btns}>
         <Link to="/adminPage">
           <Button name="Вернуться назад" />

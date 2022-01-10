@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addPizzaAction } from "../../../store/actions/pizzaActions";
 import Block from "./block/block";
-import AllPizzas from "./allPizzas/allPizzas";
+import AllPizzas from "../common/allPizzas/allPizzas.jsx";
 
 export default function NewPizza() {
   const dispatch = useDispatch();
@@ -31,7 +31,7 @@ export default function NewPizza() {
 
   return (
     <div className={styles.content}>
-      <AllPizzas />
+      <AllPizzas heading="Все пиццы" />
       <div className={styles.content_wrapper}>
         <h2 className={styles.content_font}>Добавить пиццу</h2>
         <Block
