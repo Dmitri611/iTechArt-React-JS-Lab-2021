@@ -18,10 +18,10 @@ export default function User() {
     <div className={styles.content}>
       <h2>Личные данные </h2>
       <div className={styles.content_blocks}>
-        <Block name="First name" label="Имя" />
-        <Block name="Last name" label="Фамилия" />
-        <Block name="delivery address" label="Адрес доставки" />
-        <Block name="Email" label="Введите почту" />
+        <Block name="firstName" label="Имя" />
+        <Block name="lastName" label="Фамилия" />
+        <Block name="address" label="Адрес доставки" />
+        <Block name="email" label="Введите почту" />
       </div>
       <Button name="История заказов" />
       <div className={styles.content_btns}>

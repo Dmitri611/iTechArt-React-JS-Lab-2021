@@ -1,4 +1,4 @@
-import { ADD_PIZZA, DELETE_PIZZA, FIND_PIZZA } from "../constants/constants";
+import { ADD_PIZZA, DELETE_PIZZA } from "../constants/constants";
 
 const pizzasState = {
   pizzas: [
@@ -51,11 +51,6 @@ export const pizzasReducer = (state = pizzasState, action) => {
       return {
         ...state,
         pizzas: state.pizzas.filter((pizza) => pizza.name !== action.delPizza),
-      };
-    case FIND_PIZZA:
-      return {
-        ...state,
-        pizzas: state.pizzas.splice(action.findPizza),
       };
     default:
       return state;

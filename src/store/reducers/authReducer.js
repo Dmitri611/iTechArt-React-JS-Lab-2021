@@ -1,14 +1,16 @@
+import { ENTRY_CURRENT_USER } from "../constants/constants";
+
 const authState = {
-  users: [
-    {
-      login: "admin",
-      authorized: "false",
-    },
-  ],
+  users: [],
 };
 
-export const usersReducer = (state = authState, action) => {
+export const authReducer = (state = authState, action) => {
   switch (action.type) {
+    case ENTRY_CURRENT_USER:
+      return {
+        ...state,
+        users: [...state.users, action.authUser],
+      };
     default:
       return state;
   }
