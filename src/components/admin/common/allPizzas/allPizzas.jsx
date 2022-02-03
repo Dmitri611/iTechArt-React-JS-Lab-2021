@@ -15,7 +15,11 @@ export default function AllPizzas(props) {
       {pizzas.length > 0 ? (
         <select size="3" className={styles.pizzas_select}>
           {pizzas.map((pizza) => (
-            <option onClick={props.onClick} onChange={props.onChange} key={pizza.name}>
+            <option
+              onClick={props.onClick}
+              onChange={props.onChange}
+              key={pizza.name}
+            >
               {pizza.name}
             </option>
           ))}

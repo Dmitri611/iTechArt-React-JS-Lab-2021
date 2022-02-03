@@ -6,53 +6,56 @@ import { Link } from "react-router-dom";
 import Block from "../../admin/newPizzaPage/block/block";
 import { useDispatch, useSelector } from "react-redux";
 import { userSelector } from "../../../store/selectors/usersSelectors";
-import { authUserSelector } from "../../../store/selectors/authSelectors"
+// import { authUserSelector } from "../../../store/selectors/authSelectors";
 import { authUser } from "../../../store/actions/authUserActions";
 
 export default function Login() {
-  const authUsers = useSelector(authUserSelector)
+  // const authUsers = useSelector(authUserSelector);
   const users = useSelector(userSelector);
   const dispatch = useDispatch();
 
   const [user, setUser] = useState({
-    login: "",
-    password: "",
     authorized: "false",
     currentUser: {
       login: "",
       password: "",
       email: "",
+      firstName: "Dmitri",
+      lastName: "Novikov",
+      address: "Vitebsk",
     },
   });
 
-  
-
   const handleChange = (e) => {
-    const thisUser = users.find((item) => item.login === user.login)
+    const thisUser = users.find(
+      (item) => item.login === user.currentUser.login
+    );
     setUser({
-      ...user,
-      [e.target.name]: e.target.value,
       authorized: "true",
       currentUser: {
-        login: thisUser?.login,
-        password: thisUser?.password,
-        email: thisUser?.email
-      }
+        ...user.currentUser,
+        [e.target.name]: e.target.value,
+        email: thisUser?.email,
+        firstName: thisUser?.firstName,
+        lastName: thisUser?.lastName,
+        address: thisUser?.address,
+      },
     });
   };
 
   const findUser = () => {
-    const thisUser = users.find((item) => item.login === user.login);
+    const thisUser = users.find(
+      (item) => item.login === user.currentUser.login
+    );
 
     if (!thisUser) {
       alert("Пользователя не существует!");
     } else {
-      if (user.login === thisUser.login) {
-        if (user.password === thisUser.password) {
+      if (user.currentUser.login === thisUser.login) {
+        if (user.currentUser.password === thisUser.password) {
           dispatch(authUser(user));
-          alert(`Пользователь ${user.login} успешно авторизован!`);
-        }
-         else {
+          alert(`Пользователь ${user.currentUser.login} успешно авторизован!`);
+        } else {
           alert("Неверный пароль!");
         }
       } else {
@@ -60,7 +63,6 @@ export default function Login() {
       }
     }
   };
-  console.log(authUsers);
 
   return (
     <div className={styles.content}>
@@ -68,14 +70,14 @@ export default function Login() {
       <div className={styles.content_wrapper}>
         <Block
           name="login"
-          value={user.login}
+          value={user.currentUser.login}
           label="login"
           help="Введите ваш логин!"
           onChange={handleChange}
         />
         <Block
           name="password"
-          value={user.password}
+          value={user.currentUser.password}
           label="password"
           type="password"
           onChange={handleChange}

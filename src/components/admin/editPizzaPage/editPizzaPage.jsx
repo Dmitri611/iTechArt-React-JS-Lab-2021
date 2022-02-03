@@ -7,11 +7,14 @@ import Block from "../newPizzaPage/block/block";
 import { useSelector } from "react-redux";
 import { pizzaSelector } from "../../../store/selectors/pizzaSelectors";
 import { useDispatch } from "react-redux";
-import { addPizzaAction, delPizzaAction } from "../../../store/actions/pizzaActions";
+import {
+  addPizzaAction,
+  delPizzaAction,
+} from "../../../store/actions/pizzaActions";
 
 export default function EditPizzaPage() {
   let pizzas = useSelector(pizzaSelector);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const [pizza, SetPizza] = useState({
     name: "",
@@ -22,8 +25,8 @@ export default function EditPizzaPage() {
   });
 
   const [inputNameValue, setInputNameValue] = useState({
-    value: ""
-  })
+    value: "",
+  });
 
   const [newPizza, setNewPizza] = useState({
     name: "",
@@ -31,7 +34,7 @@ export default function EditPizzaPage() {
     ingredients: "",
     price: "",
     amount: "",
-  })
+  });
 
   const handleChange = (e) => {
     setNewPizza({
@@ -44,8 +47,8 @@ export default function EditPizzaPage() {
     let thisPizza = e.target.value;
     const item = pizzas.find((item) => item.name === thisPizza);
     setInputNameValue({
-      value: e.target.value
-    })
+      value: e.target.value,
+    });
     SetPizza({
       name: item.name,
       image: item.image,
@@ -57,8 +60,8 @@ export default function EditPizzaPage() {
 
   const editPizza = () => {
     dispatch(delPizzaAction(inputNameValue.value));
-    dispatch(addPizzaAction(newPizza))
-  }
+    dispatch(addPizzaAction(newPizza));
+  };
 
   return (
     <div className={styles.content}>
